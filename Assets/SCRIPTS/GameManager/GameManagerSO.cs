@@ -29,9 +29,10 @@ public class GameManagerSO : ScriptableObject
 
     bool ConteoRedresivo = true;
     public Rect ConteoPosEsc;
+
     public float ConteoParaInicion = 3;
-    public Text ConteoInicio;
-    public Text TiempoDeJuegoText;
+    //public Text ConteoInicio;
+    //public Text TiempoDeJuegoText;
 
     public float TiempEspMuestraPts = 3;
 
@@ -112,17 +113,17 @@ public class GameManagerSO : ScriptableObject
                 {
                     if (ConteoParaInicion > 1)
                     {
-                        ConteoInicio.text = ConteoParaInicion.ToString("0");
+                        // ConteoInicio.text = ConteoParaInicion.ToString("0");
                     }
                     else
                     {
-                        ConteoInicio.text = "GO";
+                        //ConteoInicio.text = "GO";
                     }
                 }
 
-                ConteoInicio.gameObject.SetActive(ConteoRedresivo);
+                //ConteoInicio.gameObject.SetActive(ConteoRedresivo);
 
-                TiempoDeJuegoText.text = TiempoDeJuego.ToString("00");
+                //TiempoDeJuegoText.text = TiempoDeJuego.ToString("00");
 
                 break;
 
@@ -137,7 +138,7 @@ public class GameManagerSO : ScriptableObject
                 break;
         }
 
-        TiempoDeJuegoText.transform.parent.gameObject.SetActive(EstAct == EstadoJuego.Jugando && !ConteoRedresivo);
+        // TiempoDeJuegoText.transform.parent.gameObject.SetActive(EstAct == EstadoJuego.Jugando && !ConteoRedresivo);
     }
     //----------------------------------------------------------//
 
@@ -155,10 +156,14 @@ public class GameManagerSO : ScriptableObject
         }
 
         Player1.CambiarATutorial();
+
+        if (config.isSinglePlayer)
+            return;
+
         Player2.CambiarATutorial();
 
-        TiempoDeJuegoText.transform.parent.gameObject.SetActive(false);
-        ConteoInicio.gameObject.SetActive(false);
+        //TiempoDeJuegoText.transform.parent.gameObject.SetActive(false);
+        //ConteoInicio.gameObject.SetActive(false);
     }
 
     void EmpezarCarrera()
@@ -247,6 +252,11 @@ public class GameManagerSO : ScriptableObject
             ObjsCalibracion1[i].SetActive(false);
         }
 
+        Player1.CambiarAConduccion();
+
+        if (config.isSinglePlayer)
+            return;
+
         Player2.FinCalibrado = true;
 
         for (int i = 0; i < ObjsCalibracion2.Length; i++)
@@ -254,39 +264,11 @@ public class GameManagerSO : ScriptableObject
             ObjsCalibracion2[i].SetActive(false);
         }
 
-
-        // //posiciona los camiones dependiendo de que lado de la pantalla esten
-        // if (Player1.LadoActual == Visualizacion.Lado.Izq)
-        // {
-        //     Player1.gameObject.transform.position = PosCamionesCarrera[0];
-        //     Player2.gameObject.transform.position = PosCamionesCarrera[1];
-        // }
-        // else
-        // {
-        //     Player1.gameObject.transform.position = PosCamionesCarrera[1];
-        //     Player2.gameObject.transform.position = PosCamionesCarrera[0];
-        // }
-
-        Player1.transform.forward = Vector3.forward;
-        Player1.GetComponent<Frenado>().Frenar();
-        Player1.CambiarAConduccion();
-
-        Player2.transform.forward = Vector3.forward;
-        Player2.GetComponent<Frenado>().Frenar();
         Player2.CambiarAConduccion();
 
-        //los deja andando
-        Player1.GetComponent<Frenado>().RestaurarVel();
-        Player2.GetComponent<Frenado>().RestaurarVel();
-        //cancela la direccion
-        Player1.GetComponent<ControlDireccion>().Habilitado = false;
-        Player2.GetComponent<ControlDireccion>().Habilitado = false;
-        //les de direccion
-        Player1.transform.forward = Vector3.forward;
-        Player2.transform.forward = Vector3.forward;
-
-        TiempoDeJuegoText.transform.parent.gameObject.SetActive(false);
-        ConteoInicio.gameObject.SetActive(false);
+        //Enable counter texts NOT HERE
+        //TiempoDeJuegoText.transform.parent.gameObject.SetActive(false);
+        //ConteoInicio.gameObject.SetActive(false);
     }
 
     public void FinCalibracion(int playerID)
@@ -294,6 +276,12 @@ public class GameManagerSO : ScriptableObject
         if (playerID == 0)
         {
             Player1.FinTuto = true;
+        }
+
+        if (Player1.FinTuto && config.isSinglePlayer)
+        {
+            CambiarACarrera();
+            return;
         }
 
         if (playerID == 1)
@@ -304,7 +292,6 @@ public class GameManagerSO : ScriptableObject
         if (Player1.FinTuto && Player2.FinTuto)
             CambiarACarrera();
     }
-
 
     public void SpawnPlayers()
     {

@@ -98,7 +98,7 @@ public class Visualizacion : MonoBehaviour
         CamConduccion.enabled = false;
         CamDescarga.enabled = false;
 
-       // Array.ForEach(enableInPlayerStates, e => e.SetPlayerState(Pj.EstAct));
+        // Array.ForEach(enableInPlayerStates, e => e.SetPlayerState(Pj.EstAct));
     }
 
     public void CambiarAConduccion()
@@ -107,7 +107,7 @@ public class Visualizacion : MonoBehaviour
         CamConduccion.enabled = true;
         CamDescarga.enabled = false;
 
-        Array.ForEach(enableInPlayerStates, e => e.SetPlayerState(Pj.EstAct));
+        //Array.ForEach(enableInPlayerStates, e => e.SetPlayerState(Pj.EstAct));
     }
 
     public void CambiarADescarga()
@@ -287,21 +287,21 @@ public class Visualizacion : MonoBehaviour
         switch (LadoAct)
         {
             case Lado.Izq:
-                //CamCalibracion.rect = new Rect(0, 0, 0.5f, 1);
+                CamCalibracion.rect = new Rect(0, 0, 0.5f, 1);
                 CamConduccion.rect = new Rect(0, 0, 0.5f, 1);
-                // CamDescarga.rect = new Rect(0, 0, 0.5f, 1);
+                CamDescarga.rect = new Rect(0, 0, 0.5f, 1);
                 break;
 
             case Lado.Central:
-                // CamCalibracion.rect = new Rect(0, 0, 1, 1);
+                CamCalibracion.rect = new Rect(0, 0, 1, 1);
                 CamConduccion.rect = new Rect(0, 0, 1, 1);
-                // CamDescarga.rect = new Rect(0, 0, 1, 1);
+                CamDescarga.rect = new Rect(0, 0, 1, 1);
                 break;
 
             case Lado.Der:
-                // CamCalibracion.rect = new Rect(0.5f, 0, 0.5f, 1);
+                CamCalibracion.rect = new Rect(0.5f, 0, 0.5f, 1);
                 CamConduccion.rect = new Rect(0.5f, 0, 0.5f, 1);
-                //CamDescarga.rect = new Rect(0.5f, 0, 0.5f, 1);
+                CamDescarga.rect = new Rect(0.5f, 0, 0.5f, 1);
                 break;
         }
     }

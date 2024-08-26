@@ -103,6 +103,18 @@ public class Player : MonoBehaviour
     {
         EstAct = Player.Estados.EnConduccion;
         MiVisualizacion.CambiarAConduccion();
+
+        transform.forward = Vector3.forward;
+        GetComponent<Frenado>().Frenar();
+        
+        //los deja andando
+        GetComponent<Frenado>().RestaurarVel();
+
+        //cancela la direccion
+        GetComponent<ControlDireccion>().Habilitado = false;
+
+        //les de direccion
+        transform.forward = Vector3.forward;
     }
 
     public void CambiarADescarga()
