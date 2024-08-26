@@ -20,8 +20,10 @@ public class GameManagerSO : ScriptableObject
 
     public EstadoJuego EstAct = EstadoJuego.Calibrando;
 
-    [SerializeField] private GameObject truckPrefabP1;
-    [SerializeField] private GameObject truckPrefabP2;
+    [SerializeField] private GameObject playerPrefab;
+    [SerializeField] private PlayerConfigSO singlePlayerConfig;
+    [SerializeField] private PlayerConfigSO playerOneConfig;
+    [SerializeField] private PlayerConfigSO playerTwoConfig;
     public Player Player1;
     public Player Player2;
 
@@ -32,10 +34,6 @@ public class GameManagerSO : ScriptableObject
     public Text TiempoDeJuegoText;
 
     public float TiempEspMuestraPts = 3;
-
-    //posiciones de los camiones dependientes del lado que les toco en la pantalla
-    //la pos 0 es para la izquierda y la 1 para la derecha
-    public Vector3[] PosCamionesCarrera = new Vector3[2];
 
     //posiciones de los camiones para el tutorial
     public Vector3 PosCamion1Tuto = Vector3.zero;
@@ -51,13 +49,7 @@ public class GameManagerSO : ScriptableObject
     public GameObject[] ObjsCarrera;
 
     //--------------------------------------------------------//
-    IEnumerator Start()
-    {
-        yield return null;
-        IniciarTutorial();
-    }
-
-    void Update()
+    void UpdateGame()
     {
         //REINICIAR
         if (Input.GetKey(KeyCode.Alpha0))
@@ -147,7 +139,6 @@ public class GameManagerSO : ScriptableObject
 
         TiempoDeJuegoText.transform.parent.gameObject.SetActive(EstAct == EstadoJuego.Jugando && !ConteoRedresivo);
     }
-
     //----------------------------------------------------------//
 
     public void IniciarTutorial()
@@ -264,17 +255,17 @@ public class GameManagerSO : ScriptableObject
         }
 
 
-        //posiciona los camiones dependiendo de que lado de la pantalla esten
-        if (Player1.LadoActual == Visualizacion.Lado.Izq)
-        {
-            Player1.gameObject.transform.position = PosCamionesCarrera[0];
-            Player2.gameObject.transform.position = PosCamionesCarrera[1];
-        }
-        else
-        {
-            Player1.gameObject.transform.position = PosCamionesCarrera[1];
-            Player2.gameObject.transform.position = PosCamionesCarrera[0];
-        }
+        // //posiciona los camiones dependiendo de que lado de la pantalla esten
+        // if (Player1.LadoActual == Visualizacion.Lado.Izq)
+        // {
+        //     Player1.gameObject.transform.position = PosCamionesCarrera[0];
+        //     Player2.gameObject.transform.position = PosCamionesCarrera[1];
+        // }
+        // else
+        // {
+        //     Player1.gameObject.transform.position = PosCamionesCarrera[1];
+        //     Player2.gameObject.transform.position = PosCamionesCarrera[0];
+        // }
 
         Player1.transform.forward = Vector3.forward;
         Player1.GetComponent<Frenado>().Frenar();
@@ -312,5 +303,27 @@ public class GameManagerSO : ScriptableObject
 
         if (Player1.FinTuto && Player2.FinTuto)
             CambiarACarrera();
+    }
+
+
+    public void SpawnPlayers()
+    {
+        if (config.isSinglePlayer)
+            Player1 = SpawnPlayer(config.PosCamionesCarrera[0], singlePlayerConfig).GetComponent<Player>();
+        else
+        {
+            Player1 = SpawnPlayer(config.PosCamionesCarrera[1], playerOneConfig).GetComponent<Player>();
+            Player2 = SpawnPlayer(config.PosCamionesCarrera[2], playerTwoConfig).GetComponent<Player>();
+        }
+    }
+
+    private GameObject SpawnPlayer(Vector3 position, PlayerConfigSO playerConfig)
+    {
+        GameObject playerObject = Instantiate(playerPrefab, position, Quaternion.identity);
+        Player player = playerObject.GetComponent<Player>();
+        player.config = playerConfig;
+
+        player.SetConfig();
+        return playerObject;
     }
 }

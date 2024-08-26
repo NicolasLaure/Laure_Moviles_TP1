@@ -671,6 +671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7272f53a2d4f7174a8c5cb502d24bb0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  config: {fileID: 0}
   Dinero: 0
   IdPlayer: 0
   Bolasas:
@@ -765,7 +766,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LadoAct: 0
-  uiRoot: {fileID: 0}
   CamCalibracion: {fileID: 0}
   CamConduccion: {fileID: 7323942383283014899}
   CamDescarga: {fileID: 0}

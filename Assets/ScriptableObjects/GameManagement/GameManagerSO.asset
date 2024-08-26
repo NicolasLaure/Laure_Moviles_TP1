@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 20228968466115f409c9ebba074976e3, type: 2}
   TiempoDeJuego: 60
-  EstAct: 0
-  truckPrefabP1: {fileID: 0}
-  truckPrefabP2: {fileID: 0}
+  EstAct: 1
+  playerPrefab: {fileID: 331577153966840369, guid: 93aff51c22efe2d44abc5af137cd5747,
+    type: 3}
+  singlePlayerConfig: {fileID: 11400000, guid: 9cc2c88b9eb77b1459240d1a90780085, type: 2}
+  playerOneConfig: {fileID: 11400000, guid: 4c7899980aeedd244bd5ab1a865cff24, type: 2}
+  playerTwoConfig: {fileID: 11400000, guid: e3f177092b2b26843a8754a7e2b5178e, type: 2}
   Player1: {fileID: 0}
   Player2: {fileID: 0}
   ConteoPosEsc:
@@ -29,9 +32,6 @@ MonoBehaviour:
   ConteoInicio: {fileID: 0}
   TiempoDeJuegoText: {fileID: 0}
   TiempEspMuestraPts: 3
-  PosCamionesCarrera:
-  - {x: -17.5, y: 1, z: 5243}
-  - {x: -4.2, y: 1, z: 5243}
   PosCamion1Tuto: {x: 0, y: 0, z: 0}
   PosCamion2Tuto: {x: 0, y: 0, z: 0}
   ObjsCalibracion1: []
