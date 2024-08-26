@@ -169,10 +169,11 @@ public class GameManagerSO : ScriptableObject
     void EmpezarCarrera()
     {
         Player1.GetComponent<Frenado>().RestaurarVel();
-        Player1.GetComponent<ControlDireccion>().Habilitado = true;
+
+        if (config.isSinglePlayer)
+            return;
 
         Player2.GetComponent<Frenado>().RestaurarVel();
-        Player2.GetComponent<ControlDireccion>().Habilitado = true;
     }
 
     void FinalizarCarrera()

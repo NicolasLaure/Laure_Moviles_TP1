@@ -110,9 +110,6 @@ public class Player : MonoBehaviour
         //los deja andando
         GetComponent<Frenado>().RestaurarVel();
 
-        //cancela la direccion
-        GetComponent<ControlDireccion>().Habilitado = false;
-
         //les de direccion
         transform.forward = Vector3.forward;
     }
