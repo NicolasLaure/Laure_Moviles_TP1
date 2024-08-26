@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ESCENAS/conduccion9.unity
-    guid: 6a990c81459e9b04c87adbbd2d639bbd
+    path: Assets/ESCENAS/Menu.unity
+    guid: e613690a96e075d43aa778ae7d836f24
+  - enabled: 1
+    path: Assets/ESCENAS/Game.unity
+    guid: 05fb65a26b5bf9541a07feabad3c08ab
   - enabled: 1
     path: Assets/ESCENAS/PtsFinal.unity
     guid: 3fed48a553168ae458bbf014c512a5cd

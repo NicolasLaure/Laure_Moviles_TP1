@@ -1,8 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class MenuManager : MonoBehaviour
+namespace SceneManagement
 {
-    
+    public class MenuManager : MonoBehaviour
+    {
+        [SerializeField] private GameConfig config;
+        public void PlaySinglePlayer()
+        {
+            config.isSinglePlayer = true;
+            SceneManager.LoadScene(1);
+        }
+        
+        public void PlayMultiPlayer()
+        {
+            config.isSinglePlayer = false;
+            SceneManager.LoadScene(1);
+        }
+    }
 }
