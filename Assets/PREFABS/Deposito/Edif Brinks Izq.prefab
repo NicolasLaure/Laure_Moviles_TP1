@@ -258,6 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 552417712197940111}
+  - component: {fileID: 5021141690557698512}
   m_Layer: 0
   m_Name: Edif Brinks Izq
   m_TagString: Untagged
@@ -278,6 +279,7 @@ Transform:
   m_LocalScale: {x: 0.84304297, y: 0.84304297, z: 0.84304297}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2709133417007565890}
   - {fileID: 4374425706209145938}
   - {fileID: 9056534016385930502}
   - {fileID: 8919913710483366180}
@@ -295,7 +297,6 @@ Transform:
   - {fileID: 6364932332842432046}
   - {fileID: 1947220919033259416}
   - {fileID: 4246216833732914739}
-  - {fileID: 2709133417007565890}
   - {fileID: 656069069822338462}
   - {fileID: 6425646962589261950}
   - {fileID: 2048101205187908015}
@@ -305,6 +306,23 @@ Transform:
   - {fileID: 5318282629742577857}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5021141690557698512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365189980283490583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206de8d6996c901409dc8463798b8469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerTag: Player
+  Vacio: 1
+  Contr1: {fileID: 0}
+  Contr2: {fileID: 0}
+  colliderHandler: {fileID: 5227791840921647627}
 --- !u!1 &1446845793775572467
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,9 +836,9 @@ GameObject:
   - component: {fileID: 5056791938140310829}
   - component: {fileID: 2603380217101212185}
   - component: {fileID: 3689242003284533664}
-  - component: {fileID: 1454674966688646049}
+  - component: {fileID: 5227791840921647627}
   m_Layer: 0
-  m_Name: Deposito2
+  m_Name: Collider
   m_TagString: Deposito
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -912,7 +930,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1454674966688646049
+--- !u!114 &5227791840921647627
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -921,13 +939,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4618428962143319300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 206de8d6996c901409dc8463798b8469, type: 3}
+  m_Script: {fileID: 11500000, guid: 18d705d3ba9a878428b7e24912144490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerTag: Player
-  Vacio: 1
-  Contr1: {fileID: 0}
-  Contr2: {fileID: 0}
 --- !u!1 &4702036954428598925
 GameObject:
   m_ObjectHideFlags: 0

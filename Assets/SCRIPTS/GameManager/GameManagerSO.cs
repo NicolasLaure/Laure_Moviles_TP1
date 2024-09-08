@@ -30,8 +30,6 @@ public class GameManagerSO : ScriptableObject
     public TimerManager StartCountDown;
     public TimerManager GameTimer;
 
-    //public Text ConteoInicio;
-    //public Text TiempoDeJuegoText;
 
     public float TiempEspMuestraPts = 3;
 
@@ -298,6 +296,9 @@ public class GameManagerSO : ScriptableObject
 
     public void SpawnPlayers()
     {
+        Player1 = null;
+        Player2 = null;
+
         if (config.isSinglePlayer)
             Player1 = SpawnPlayer(config.PosCamionesCarrera[0], singlePlayerConfig).GetComponent<Player>();
         else

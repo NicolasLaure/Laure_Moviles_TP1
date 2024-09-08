@@ -752,7 +752,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputAct: 0
-  Habilitado: 1
 --- !u!114 &1246274350319367971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -766,9 +765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LadoAct: 0
-  CamCalibracion: {fileID: 0}
-  CamConduccion: {fileID: 7323942383283014899}
-  CamDescarga: {fileID: 0}
+  _CamConduccion: {fileID: 7323942383283014899}
   Dinero: {fileID: 0}
   volante: {fileID: 0}
   Parpadeo: 0.5

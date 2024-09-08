@@ -25,9 +25,9 @@ public class Visualizacion : MonoBehaviour
     private EnableInPlayerState[] enableInPlayerStates;
 
     //las distintas camaras
-    public Camera CamCalibracion;
-    public Camera CamConduccion;
-    public Camera CamDescarga;
+    [SerializeField] private Camera _CamConduccion;
+    private Camera _CamCalibracion;
+    private Camera _CamDescarga;
 
     //EL DINERO QUE SE TIENE
     public Text Dinero;
@@ -59,6 +59,7 @@ public class Visualizacion : MonoBehaviour
     {
         Direccion = GetComponent<ControlDireccion>();
         Pj = GetComponent<Player>();
+
     }
 
     // Update is called once per frame
@@ -94,29 +95,27 @@ public class Visualizacion : MonoBehaviour
 
     public void CambiarATutorial()
     {
-        CamCalibracion.enabled = true;
-        CamConduccion.enabled = false;
-        CamDescarga.enabled = false;
+        _CamCalibracion.enabled = true;
+        _CamConduccion.enabled = false;
+        _CamDescarga.enabled = false;
 
         // Array.ForEach(enableInPlayerStates, e => e.SetPlayerState(Pj.EstAct));
     }
 
     public void CambiarAConduccion()
     {
-        CamCalibracion.enabled = false;
-        CamConduccion.enabled = true;
-        CamDescarga.enabled = false;
+        _CamCalibracion.enabled = false;
+        _CamConduccion.enabled = true;
+        _CamDescarga.enabled = false;
 
         //Array.ForEach(enableInPlayerStates, e => e.SetPlayerState(Pj.EstAct));
     }
 
     public void CambiarADescarga()
     {
-        CamCalibracion.enabled = false;
-        CamConduccion.enabled = false;
-        CamDescarga.enabled = true;
-
-        Array.ForEach(enableInPlayerStates, e => e.SetPlayerState(Pj.EstAct));
+        _CamCalibracion.enabled = false;
+        _CamConduccion.enabled = false;
+        _CamDescarga.enabled = true;
     }
 
     //---------//
@@ -126,9 +125,9 @@ public class Visualizacion : MonoBehaviour
         LadoAct = lado;
 
         Rect r = new Rect();
-        r.width = CamConduccion.rect.width;
-        r.height = CamConduccion.rect.height;
-        r.y = CamConduccion.rect.y;
+        r.width = _CamConduccion.rect.width;
+        r.height = _CamConduccion.rect.height;
+        r.y = _CamConduccion.rect.y;
 
         switch (lado)
         {
@@ -142,9 +141,9 @@ public class Visualizacion : MonoBehaviour
                 break;
         }
 
-        CamCalibracion.rect = r;
-        CamConduccion.rect = r;
-        CamDescarga.rect = r;
+        _CamCalibracion.rect = r;
+        _CamConduccion.rect = r;
+        _CamDescarga.rect = r;
     }
 
     void SetBonus()
@@ -281,27 +280,27 @@ public class Visualizacion : MonoBehaviour
 
     public void SetCamerasViewPort(Camera calibrationCam, Camera downloadCam)
     {
-        CamCalibracion = calibrationCam;
-        CamDescarga = downloadCam;
+        _CamCalibracion = calibrationCam;
+        _CamDescarga = downloadCam;
 
         switch (LadoAct)
         {
             case Lado.Izq:
-                CamCalibracion.rect = new Rect(0, 0, 0.5f, 1);
-                CamConduccion.rect = new Rect(0, 0, 0.5f, 1);
-                CamDescarga.rect = new Rect(0, 0, 0.5f, 1);
+                _CamCalibracion.rect = new Rect(0, 0, 0.5f, 1);
+                _CamConduccion.rect = new Rect(0, 0, 0.5f, 1);
+                _CamDescarga.rect = new Rect(0, 0, 0.5f, 1);
                 break;
 
             case Lado.Central:
-                CamCalibracion.rect = new Rect(0, 0, 1, 1);
-                CamConduccion.rect = new Rect(0, 0, 1, 1);
-                CamDescarga.rect = new Rect(0, 0, 1, 1);
+                _CamCalibracion.rect = new Rect(0, 0, 1, 1);
+                _CamConduccion.rect = new Rect(0, 0, 1, 1);
+                _CamDescarga.rect = new Rect(0, 0, 1, 1);
                 break;
 
             case Lado.Der:
-                CamCalibracion.rect = new Rect(0.5f, 0, 0.5f, 1);
-                CamConduccion.rect = new Rect(0.5f, 0, 0.5f, 1);
-                CamDescarga.rect = new Rect(0.5f, 0, 0.5f, 1);
+                _CamCalibracion.rect = new Rect(0.5f, 0, 0.5f, 1);
+                _CamConduccion.rect = new Rect(0.5f, 0, 0.5f, 1);
+                _CamDescarga.rect = new Rect(0.5f, 0, 0.5f, 1);
                 break;
         }
     }

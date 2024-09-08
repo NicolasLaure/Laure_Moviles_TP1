@@ -95,9 +95,9 @@ GameObject:
   - component: {fileID: 1120163464325793867}
   - component: {fileID: 2194334235832881526}
   - component: {fileID: 6260286181746940762}
-  - component: {fileID: 2817531373722244079}
+  - component: {fileID: 3347676972781849523}
   m_Layer: 0
-  m_Name: Deposito2
+  m_Name: Collider
   m_TagString: Deposito
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,7 +189,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2817531373722244079
+--- !u!114 &3347676972781849523
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,13 +198,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 484719691663996130}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 206de8d6996c901409dc8463798b8469, type: 3}
+  m_Script: {fileID: 11500000, guid: 18d705d3ba9a878428b7e24912144490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerTag: Player
-  Vacio: 1
-  Contr1: {fileID: 0}
-  Contr2: {fileID: 0}
 --- !u!1 &1457322011588506040
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +544,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4745087746945978042}
+  - component: {fileID: 372744536160005316}
   m_Layer: 0
   m_Name: Edif Brinks Der
   m_TagString: Untagged
@@ -565,9 +562,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.84304297, y: 0.84304297, z: 0.84304297}
+  m_LocalScale: {x: 0.843043, y: 0.84304297, z: 0.84304297}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8268936015627438469}
   - {fileID: 5996611201137330462}
   - {fileID: 2414380808249237458}
   - {fileID: 4927269523883990659}
@@ -581,7 +579,6 @@ Transform:
   - {fileID: 1496839027635622564}
   - {fileID: 8872343524299499016}
   - {fileID: 2519590708942117108}
-  - {fileID: 8268936015627438469}
   - {fileID: 6043514909472634293}
   - {fileID: 7643670605311830290}
   - {fileID: 5232758344303579094}
@@ -591,6 +588,23 @@ Transform:
   - {fileID: 8422224841786115404}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &372744536160005316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3042632155357852539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206de8d6996c901409dc8463798b8469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerTag: Player
+  Vacio: 1
+  Contr1: {fileID: 0}
+  Contr2: {fileID: 0}
+  colliderHandler: {fileID: 3347676972781849523}
 --- !u!1 &3203865278297815544
 GameObject:
   m_ObjectHideFlags: 0

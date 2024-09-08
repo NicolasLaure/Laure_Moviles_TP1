@@ -9,6 +9,10 @@ public class GameManagerInstance : MonoBehaviour
     [SerializeField] private TimerManager startingCountDown;
     [SerializeField] private TimerManager gameTimer;
 
+    [SerializeField] private ControladorDeDescarga contr1;
+
+    [SerializeField] private ControladorDeDescarga contr2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +20,11 @@ public class GameManagerInstance : MonoBehaviour
         gameManager.StartCountDown = startingCountDown;
         gameManager.GameTimer = gameTimer;
         gameManager.SpawnPlayers();
+
+        contr1.SetPlayer(gameManager.Player1);
+
+        if (gameManager.Player2 != null)
+            contr2.SetPlayer(gameManager.Player2);
 
         //Set Cameras
         //Iniciar Tutorial
