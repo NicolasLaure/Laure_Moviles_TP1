@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -46,6 +47,8 @@ public class GameManagerSO : ScriptableObject
     //la pista de carreras
     public GameObject[] ObjsCarrera;
 
+    public event Action<bool> onToggleUI;
+
     //--------------------------------------------------------//
     public void UpdateGame()
     {
@@ -80,6 +83,7 @@ public class GameManagerSO : ScriptableObject
 
             case EstadoJuego.Jugando:
 
+                //Turn on UI
                 GameTimer.ToggleOnOff(true);
                 //SKIP LA CARRERA
                 if (Input.GetKey(KeyCode.Alpha9))
@@ -306,6 +310,8 @@ public class GameManagerSO : ScriptableObject
             Player1 = SpawnPlayer(config.PosCamionesCarrera[1], playerOneConfig).GetComponent<Player>();
             Player2 = SpawnPlayer(config.PosCamionesCarrera[2], playerTwoConfig).GetComponent<Player>();
         }
+
+        onToggleUI?.Invoke(true);
     }
 
     private GameObject SpawnPlayer(Vector3 position, PlayerConfigSO playerConfig)
@@ -316,5 +322,10 @@ public class GameManagerSO : ScriptableObject
 
         player.SetConfig();
         return playerObject;
+    }
+
+    public bool IsSinglePlayer()
+    {
+        return config.isSinglePlayer;
     }
 }

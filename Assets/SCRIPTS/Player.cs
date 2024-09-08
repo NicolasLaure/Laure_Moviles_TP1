@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -34,6 +35,9 @@ public class Player : MonoBehaviour
 
     public Visualizacion.Lado LadoActual => MiVisualizacion.LadoAct;
 
+    public event Action onTutorialEnter;
+    public event Action onDriveEnter;
+    public event Action onDownloadEnter;
     //------------------------------------------------------------------//
 
     void Start()
@@ -97,12 +101,14 @@ public class Player : MonoBehaviour
     {
         EstAct = Player.Estados.EnTutorial;
         MiVisualizacion.CambiarATutorial();
+        onTutorialEnter?.Invoke();
     }
 
     public void CambiarAConduccion()
     {
         EstAct = Player.Estados.EnConduccion;
         MiVisualizacion.CambiarAConduccion();
+        onDriveEnter?.Invoke();
 
         transform.forward = Vector3.forward;
         GetComponent<Frenado>().Frenar();
@@ -121,6 +127,7 @@ public class Player : MonoBehaviour
     {
         EstAct = Player.Estados.EnDescarga;
         MiVisualizacion.CambiarADescarga();
+        onDownloadEnter?.Invoke();
     }
 
     public void SacarBolasa()
