@@ -3,21 +3,20 @@ using System.Collections;
 
 public class ManejoPallets : MonoBehaviour 
 {
-	protected System.Collections.Generic.List<Pallet> Pallets = new System.Collections.Generic.List<Pallet>();
+	protected System.Collections.Generic.List<Pallet> bags = new System.Collections.Generic.List<Pallet>();
 	public ControladorDeDescarga Controlador;
 	protected int Contador = 0;
 	
 	public virtual bool Recibir(Pallet pallet)
 	{
-		Pallets.Add(pallet);
+		bags.Add(pallet);
 		pallet.Pasaje();
 		return true;
 	}
 	
-	public bool Tenencia()
+	public bool HasBags()
 	{
-		
-		if(Pallets.Count != 0)
+		if(bags.Count > 0)
 			return true;
 		else
 			return false;

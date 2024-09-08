@@ -312,7 +312,7 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.5
     y: 0
     width: 0.5
     height: 1
@@ -9684,7 +9684,6 @@ MonoBehaviour:
   Controlador: {fileID: 0}
   Encendida: 0
   Velocidad: 3.5
-  Mano: {fileID: 0}
   Tiempo: 0.75
   Intervalo: 0.4
   Permanencia: 0.1

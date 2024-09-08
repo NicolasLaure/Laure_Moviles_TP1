@@ -7,7 +7,7 @@ public class ManoRecept : ManejoPallets
 	
 	void FixedUpdate () 
 	{
-		TengoPallet = Tenencia();
+		TengoPallet = HasBags();
 	}
 	
 	void OnTriggerEnter(Collider other)
@@ -24,7 +24,7 @@ public class ManoRecept : ManejoPallets
 	
 	public override bool Recibir(Pallet pallet)
 	{
-		if(!Tenencia())
+		if(!HasBags())
 		{
 			pallet.Portador = this.gameObject;
 			base.Recibir(pallet);
@@ -39,13 +39,13 @@ public class ManoRecept : ManejoPallets
 		switch (receptor.tag)
 		{
 		case "Mano":
-			if(Tenencia())
+			if(HasBags())
 			{
 				if(receptor.name == "Right Hand")
 				{
-					if(receptor.Recibir(Pallets[0]))
+					if(receptor.Recibir(bags[0]))
 					{
-						Pallets.RemoveAt(0);
+						bags.RemoveAt(0);
 					}
 				}
 				
@@ -53,11 +53,11 @@ public class ManoRecept : ManejoPallets
 			break;
 			
 		case "Cinta":
-			if(Tenencia())
+			if(HasBags())
 			{
-				if(receptor.Recibir(Pallets[0]))
+				if(receptor.Recibir(bags[0]))
 				{
-					Pallets.RemoveAt(0);
+					bags.RemoveAt(0);
 				}
 			}
 			break;

@@ -87,12 +87,10 @@ public class ControladorDeDescarga : MonoBehaviour
             Componentes[i].SetActive(true);
         }
 
-
         CollCamion.enabled = false;
         player.CambiarADescarga();
 
-
-        GameObject go;
+        GameObject bag = null;
         //asigna los pallets a las estanterias
         for (int i = 0; i < player.Bolasas.Length; i++)
         {
@@ -103,18 +101,18 @@ public class ControladorDeDescarga : MonoBehaviour
                 switch (player.Bolasas[i].Monto)
                 {
                     case Pallet.Valores.Valor1:
-                        go = Instantiate(Pallet1);
-                        Est1.Recibir(go.GetComponent<Pallet>());
+                        bag = Instantiate(Pallet1);
+                        Est1.Recibir(bag.GetComponent<Pallet>());
                         break;
 
                     case Pallet.Valores.Valor2:
-                        go = (GameObject)Instantiate(Pallet2);
-                        Est2.Recibir(go.GetComponent<Pallet>());
+                        bag = Instantiate(Pallet2);
+                        Est2.Recibir(bag.GetComponent<Pallet>());
                         break;
 
                     case Pallet.Valores.Valor3:
-                        go = (GameObject)Instantiate(Pallet3);
-                        Est3.Recibir(go.GetComponent<Pallet>());
+                        bag = Instantiate(Pallet3);
+                        Est3.Recibir(bag.GetComponent<Pallet>());
                         break;
                 }
             }

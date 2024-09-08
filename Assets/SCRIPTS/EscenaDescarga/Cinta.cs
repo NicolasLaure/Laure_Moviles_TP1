@@ -4,7 +4,6 @@ public class Cinta : ManejoPallets
 {
 	public bool Encendida;//lo que hace la animacion
 	public float Velocidad = 1;
-	public GameObject Mano;
 	public float Tiempo = 0.5f;
 	Transform ObjAct = null;
 	
@@ -48,23 +47,23 @@ public class Cinta : ManejoPallets
 		}
 		
 		//movimiento del pallet
-		for(int i = 0; i < Pallets.Count; i++)
+		for(int i = 0; i < bags.Count; i++)
 		{
-			if(Pallets[i].GetComponent<Renderer>().enabled)
+			if(bags[i].GetComponent<Renderer>().enabled)
 			{
-				if(!Pallets[i].GetComponent<Pallet>().EnSmoot)
+				if(!bags[i].GetComponent<Pallet>().EnSmoot)
 				{
-					Pallets[i].GetComponent<Pallet>().enabled = false;
-					Pallets[i].TempoEnCinta += T.GetDT();
+					bags[i].GetComponent<Pallet>().enabled = false;
+					bags[i].TempoEnCinta += T.GetDT();
 					
-					Pallets[i].transform.position += transform.right * Velocidad * T.GetDT();
-					Vector3 vAux = Pallets[i].transform.localPosition;
+					bags[i].transform.position += transform.right * Velocidad * T.GetDT();
+					Vector3 vAux = bags[i].transform.localPosition;
 					vAux.y = 3.61f;//altura especifica
-					Pallets[i].transform.localPosition = vAux;					
+					bags[i].transform.localPosition = vAux;					
 					
-					if(Pallets[i].TempoEnCinta >= Pallets[i].TiempEnCinta)
+					if(bags[i].TempoEnCinta >= bags[i].TiempEnCinta)
 					{
-						Pallets[i].TempoEnCinta = 0;
+						bags[i].TempoEnCinta = 0;
 						ObjAct.gameObject.SetActive(false);
 					}
 				}

@@ -97,7 +97,7 @@ public class Deposito2 : MonoBehaviour
 
     public void Entro()
     {
-        if (PjActual.IdPlayer == 0)
+        if (PjActual.LadoActual == Visualizacion.Lado.Central || PjActual.LadoActual == Visualizacion.Lado.Izq)
             Contr1.Activar(this);
         else
             Contr2.Activar(this);

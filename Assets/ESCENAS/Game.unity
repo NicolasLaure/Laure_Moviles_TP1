@@ -24487,6 +24487,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294261330}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1297130224 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9153475020208405775, guid: 32f4809f565e809498e3193b21db633f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1692049770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec8eac6119574394583859f055b7a0df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1298749711
 GameObject:
   m_ObjectHideFlags: 0
@@ -31540,10 +31552,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraDesc2
       objectReference: {fileID: 0}
+    - target: {fileID: 1670674237758032663, guid: 32f4809f565e809498e3193b21db633f,
+        type: 3}
+      propertyPath: Controlador
+      value: 
+      objectReference: {fileID: 2004558264}
     - target: {fileID: 2462824290102154594, guid: 32f4809f565e809498e3193b21db633f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 171.72841
+      value: 22.7
       objectReference: {fileID: 0}
     - target: {fileID: 2462824290102154594, guid: 32f4809f565e809498e3193b21db633f,
         type: 3}
@@ -31605,6 +31622,11 @@ PrefabInstance:
       propertyPath: Controlador
       value: 
       objectReference: {fileID: 542113845}
+    - target: {fileID: 4822740552398584883, guid: 32f4809f565e809498e3193b21db633f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6122032099915375874, guid: 32f4809f565e809498e3193b21db633f,
         type: 3}
       propertyPath: Controlador
@@ -31626,7 +31648,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2004558264}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4742048482879772776, guid: 32f4809f565e809498e3193b21db633f, type: 3}
+    - {fileID: 7528819078251369230, guid: 32f4809f565e809498e3193b21db633f, type: 3}
+    - {fileID: 1961826889504390778, guid: 32f4809f565e809498e3193b21db633f, type: 3}
+    - {fileID: 2840742405193911433, guid: 32f4809f565e809498e3193b21db633f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32f4809f565e809498e3193b21db633f, type: 3}
@@ -37444,7 +37470,7 @@ MonoBehaviour:
   Est3: {fileID: 1692049773}
   Cin2: {fileID: 1692049774}
   Bonus: 0
-  ObjAnimado: {fileID: 0}
+  ObjAnimado: {fileID: 1297130224}
 --- !u!4 &2004558265
 Transform:
   m_ObjectHideFlags: 0
@@ -40978,6 +41004,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1854697800}
     m_Modifications:
+    - target: {fileID: 1670674237758032663, guid: 32f4809f565e809498e3193b21db633f,
+        type: 3}
+      propertyPath: Controlador
+      value: 
+      objectReference: {fileID: 542113845}
     - target: {fileID: 2462824290102154594, guid: 32f4809f565e809498e3193b21db633f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41043,11 +41074,21 @@ PrefabInstance:
       propertyPath: Controlador
       value: 
       objectReference: {fileID: 542113845}
+    - target: {fileID: 4822740552398584883, guid: 32f4809f565e809498e3193b21db633f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6122032099915375874, guid: 32f4809f565e809498e3193b21db633f,
         type: 3}
       propertyPath: Controlador
       value: 
       objectReference: {fileID: 542113845}
+    - target: {fileID: 6556370205419862712, guid: 32f4809f565e809498e3193b21db633f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7941900907560706084, guid: 32f4809f565e809498e3193b21db633f,
         type: 3}
       propertyPath: Controlador
