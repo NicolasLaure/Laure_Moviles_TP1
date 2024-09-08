@@ -106,12 +106,15 @@ public class Player : MonoBehaviour
 
         transform.forward = Vector3.forward;
         GetComponent<Frenado>().Frenar();
-        
-        //los deja andando
-        GetComponent<Frenado>().RestaurarVel();
 
         //les de direccion
         transform.forward = Vector3.forward;
+    }
+
+    public void StartDriving()
+    {
+        //los deja andando
+        GetComponent<Frenado>().RestaurarVel();
     }
 
     public void CambiarADescarga()

@@ -6,10 +6,15 @@ public class GameManagerInstance : MonoBehaviour
 {
     [SerializeField] private GameManagerSO gameManager;
 
+    [SerializeField] private TimerManager startingCountDown;
+    [SerializeField] private TimerManager gameTimer;
+
     // Start is called before the first frame update
     void Start()
     {
         //Instantiate players
+        gameManager.StartCountDown = startingCountDown;
+        gameManager.GameTimer = gameTimer;
         gameManager.SpawnPlayers();
 
         //Set Cameras
@@ -21,6 +26,7 @@ public class GameManagerInstance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        gameManager.UpdateGame();
     }
 
     IEnumerator InitCoroutine()

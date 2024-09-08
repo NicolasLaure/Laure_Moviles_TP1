@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "GameManagerSO", menuName = "GameManagement/GameManager", order = 0)]
 public class GameManagerSO : ScriptableObject
@@ -28,9 +25,11 @@ public class GameManagerSO : ScriptableObject
     public Player Player2;
 
     bool ConteoRedresivo = true;
-    public Rect ConteoPosEsc;
-
     public float ConteoParaInicion = 3;
+    public Rect ConteoPosEsc;
+    public TimerManager StartCountDown;
+    public TimerManager GameTimer;
+
     //public Text ConteoInicio;
     //public Text TiempoDeJuegoText;
 
@@ -50,7 +49,7 @@ public class GameManagerSO : ScriptableObject
     public GameObject[] ObjsCarrera;
 
     //--------------------------------------------------------//
-    void UpdateGame()
+    public void UpdateGame()
     {
         //REINICIAR
         if (Input.GetKey(KeyCode.Alpha0))
@@ -83,6 +82,7 @@ public class GameManagerSO : ScriptableObject
 
             case EstadoJuego.Jugando:
 
+                GameTimer.ToggleOnOff(true);
                 //SKIP LA CARRERA
                 if (Input.GetKey(KeyCode.Alpha9))
                 {
@@ -96,34 +96,33 @@ public class GameManagerSO : ScriptableObject
 
                 if (ConteoRedresivo)
                 {
+                    StartCountDown.ToggleOnOff(true);
+
                     ConteoParaInicion -= T.GetDT();
                     if (ConteoParaInicion < 0)
                     {
                         EmpezarCarrera();
                         ConteoRedresivo = false;
+                        StartCountDown.ToggleOnOff(false);
+                    }
+
+                    if (ConteoParaInicion > 1)
+                    {
+                        StartCountDown.UpdateText(ConteoParaInicion.ToString("0"));
+                    }
+                    else
+                    {
+                        StartCountDown.UpdateText("GO");
                     }
                 }
                 else
                 {
                     //baja el tiempo del juego
                     TiempoDeJuego -= T.GetDT();
+
+                    GameTimer.UpdateText(TiempoDeJuego.ToString("00"));
                 }
 
-                if (ConteoRedresivo)
-                {
-                    if (ConteoParaInicion > 1)
-                    {
-                        // ConteoInicio.text = ConteoParaInicion.ToString("0");
-                    }
-                    else
-                    {
-                        //ConteoInicio.text = "GO";
-                    }
-                }
-
-                //ConteoInicio.gameObject.SetActive(ConteoRedresivo);
-
-                //TiempoDeJuegoText.text = TiempoDeJuego.ToString("00");
 
                 break;
 
@@ -168,12 +167,12 @@ public class GameManagerSO : ScriptableObject
 
     void EmpezarCarrera()
     {
-        Player1.GetComponent<Frenado>().RestaurarVel();
+        Player1.StartDriving();
 
         if (config.isSinglePlayer)
             return;
 
-        Player2.GetComponent<Frenado>().RestaurarVel();
+        Player2.StartDriving();
     }
 
     void FinalizarCarrera()
@@ -239,6 +238,9 @@ public class GameManagerSO : ScriptableObject
     void CambiarACarrera()
     {
         EstAct = EstadoJuego.Jugando;
+        ConteoParaInicion = 3;
+        TiempoDeJuego = 60;
+        ConteoRedresivo = true;
 
         for (int i = 0; i < ObjsCarrera.Length; i++)
         {
