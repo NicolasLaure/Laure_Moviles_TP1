@@ -12,7 +12,8 @@ public class ControlDireccion : MonoBehaviour
 
     float Giro = 0;
 
-    CarController carController;
+    private CarController carController;
+    private InputReader _inputReader;
 
     //---------------------------------------------------------//
 
@@ -20,51 +21,58 @@ public class ControlDireccion : MonoBehaviour
     void Start()
     {
         carController = GetComponent<CarController>();
+        _inputReader = GetComponent<InputReader>();
+        _inputReader.onMove += HandleInput;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        switch (InputAct)
-        {
-            case TipoInput.AWSD:
-
-                if (Input.GetKey(KeyCode.A))
-                {
-                    Giro = -1;
-                }
-                else if (Input.GetKey(KeyCode.D))
-                {
-                    Giro = 1;
-                }
-                else
-                {
-                    Giro = 0;
-                }
-
-                break;
-            case TipoInput.Arrows:
-                if (Input.GetKey(KeyCode.LeftArrow))
-                {
-                    Giro = -1;
-                }
-                else if (Input.GetKey(KeyCode.RightArrow))
-                {
-                    Giro = 1;
-                }
-                else
-                {
-                    Giro = 0;
-                }
-
-                break;
-        }
-
-        carController.SetGiro(Giro);
-    }
+    // void Update()
+    // {
+    //     switch (InputAct)
+    //     {
+    //         case TipoInput.AWSD:
+    //
+    //             if (Input.GetKey(KeyCode.A))
+    //             {
+    //                 Giro = -1;
+    //             }
+    //             else if (Input.GetKey(KeyCode.D))
+    //             {
+    //                 Giro = 1;
+    //             }
+    //             else
+    //             {
+    //                 Giro = 0;
+    //             }
+    //
+    //             break;
+    //         case TipoInput.Arrows:
+    //             if (Input.GetKey(KeyCode.LeftArrow))
+    //             {
+    //                 Giro = -1;
+    //             }
+    //             else if (Input.GetKey(KeyCode.RightArrow))
+    //             {
+    //                 Giro = 1;
+    //             }
+    //             else
+    //             {
+    //                 Giro = 0;
+    //             }
+    //
+    //             break;
+    //     }
+    //
+    //     carController.SetGiro(Giro);
+    // }
 
     public float GetGiro()
     {
         return Giro;
+    }
+
+    private void HandleInput(int dir)
+    {
+        carController.SetGiro(dir);
     }
 }

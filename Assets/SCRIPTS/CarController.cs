@@ -20,7 +20,6 @@ public class CarController : MonoBehaviour {
         foreach (var wheel in steeringWheels) {
             wheel.steerAngle = maxTurn * giro;
         }
-        giro = 0f;
     }
 
     public void SetGiro(float giro) {

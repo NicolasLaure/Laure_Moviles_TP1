@@ -608,6 +608,7 @@ GameObject:
   - component: {fileID: 1246274350319367971}
   - component: {fileID: 8838392006904907783}
   - component: {fileID: 1837637648585472968}
+  - component: {fileID: 5287103875816561817}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -818,6 +819,19 @@ MonoBehaviour:
   - {fileID: 7564974570551187261}
   throttleCoefficient: 200000
   maxTurn: 20
+--- !u!114 &5287103875816561817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331577153966840369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9bbe84719e85bb4cb215a665fd6caa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayerOne: 1
 --- !u!1 &388149441407114085
 GameObject:
   m_ObjectHideFlags: 0
