@@ -71,8 +71,13 @@ public class ControlDireccion : MonoBehaviour
         return Giro;
     }
 
-    private void HandleInput(int dir)
+    private void HandleInput(Vector2 dir)
     {
-        carController.SetGiro(dir);
+        if (dir.x < 0)
+            carController.SetGiro(-1);
+        else if (dir.x > 0)
+            carController.SetGiro(1);
+        else
+            carController.SetGiro(0);
     }
 }

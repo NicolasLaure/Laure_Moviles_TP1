@@ -42,6 +42,10 @@ public class PalletMover : ManejoPallets {
         }
     }
 
+    private void HandleInput(int dir)
+    {
+        
+    }
     void PrimerPaso() {
         Desde.Dar(this);
         segundoCompleto = false;

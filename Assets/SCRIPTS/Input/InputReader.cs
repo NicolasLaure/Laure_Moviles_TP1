@@ -10,7 +10,7 @@ public class InputReader : MonoBehaviour
 
     public bool isPlayerOne;
 
-    public event Action<int> onMove;
+    public event Action<Vector2> onMove;
 
     void Start()
     {
@@ -49,8 +49,8 @@ public class InputReader : MonoBehaviour
     void HandleMoveInput(InputAction.CallbackContext context)
     {
         if (context.performed)
-            onMove?.Invoke(Mathf.CeilToInt(context.ReadValue<float>()));
+            onMove?.Invoke(context.ReadValue<Vector2>());
         else
-            onMove?.Invoke(0);
+            onMove?.Invoke(Vector2.zero);
     }
 }
