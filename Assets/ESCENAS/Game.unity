@@ -6225,6 +6225,7 @@ MonoBehaviour:
   miInput: 1
   Desde: {fileID: 958384778}
   Hasta: {fileID: 753810840}
+  inputReader: {fileID: 0}
 --- !u!1 &307211249
 GameObject:
   m_ObjectHideFlags: 0
@@ -27237,6 +27238,7 @@ MonoBehaviour:
   miInput: 0
   Desde: {fileID: 818696516}
   Hasta: {fileID: 1501342510}
+  inputReader: {fileID: 0}
 --- !u!1001 &1472730523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34716,7 +34718,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1854697800
 Transform:
   m_ObjectHideFlags: 0
@@ -36542,6 +36544,8 @@ MonoBehaviour:
   gameTimer: {fileID: 3757382841737212722}
   contr1: {fileID: 542113845}
   contr2: {fileID: 2004558264}
+  tutorialP1: {fileID: 1466112525}
+  tutorialP2: {fileID: 305290393}
 --- !u!114 &1936223692
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,8 +10,10 @@ public class GameManagerInstance : MonoBehaviour
     [SerializeField] private TimerManager gameTimer;
 
     [SerializeField] private ControladorDeDescarga contr1;
-
     [SerializeField] private ControladorDeDescarga contr2;
+
+    [SerializeField] private PalletMover tutorialP1;
+    [SerializeField] private PalletMover tutorialP2;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +24,13 @@ public class GameManagerInstance : MonoBehaviour
         gameManager.SpawnPlayers();
 
         contr1.SetPlayer(gameManager.Player1);
+        tutorialP1.InputReader = gameManager.Player1.GetComponent<InputReader>();
 
         if (gameManager.Player2 != null)
+        {
             contr2.SetPlayer(gameManager.Player2);
+            tutorialP2.InputReader = gameManager.Player2.GetComponent<InputReader>();
+        }
 
         //Set Cameras
         //Iniciar Tutorial
