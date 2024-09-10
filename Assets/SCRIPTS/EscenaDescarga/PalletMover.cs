@@ -5,14 +5,6 @@ using UnityEngine;
 
 public class PalletMover : ManejoPallets
 {
-    public MoveType miInput;
-
-    public enum MoveType
-    {
-        WASD,
-        Arrows
-    }
-
     public ManejoPallets Desde, Hasta;
     private InputReader _inputReader;
     bool segundoCompleto = false;

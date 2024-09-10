@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 public class ControladorDeDescarga : MonoBehaviour
@@ -13,6 +14,8 @@ public class ControladorDeDescarga : MonoBehaviour
     public GameObject[] Componentes; //todos los componentes que debe activar en esta escena
 
     public Player player; //jugador
+    [SerializeField] private PalletMover _palletMover;
+
     MeshCollider CollCamion;
 
     public Pallet PEnMov = null;
@@ -34,7 +37,6 @@ public class ControladorDeDescarga : MonoBehaviour
 
 
     public AnimMngDesc ObjAnimado;
-
 
     //--------------------------------------------------------------//
 
@@ -74,6 +76,7 @@ public class ControladorDeDescarga : MonoBehaviour
         this.player = player;
 
         CollCamion = player.GetComponentInChildren<MeshCollider>();
+        _palletMover.InputReader = player.GetComponent<InputReader>();
         player.SetContrDesc(this);
     }
 

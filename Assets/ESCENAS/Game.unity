@@ -6222,10 +6222,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controlador: {fileID: 0}
-  miInput: 1
   Desde: {fileID: 958384778}
   Hasta: {fileID: 753810840}
-  inputReader: {fileID: 0}
 --- !u!1 &307211249
 GameObject:
   m_ObjectHideFlags: 0
@@ -11128,6 +11126,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 537878283}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &538226977 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1670674237758032663, guid: 32f4809f565e809498e3193b21db633f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1692049770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9affb8c847ec48e4ea4065d6523b3e59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &538231460
 GameObject:
   m_ObjectHideFlags: 0
@@ -11194,6 +11204,7 @@ MonoBehaviour:
   Componentes:
   - {fileID: 1371460061}
   player: {fileID: 0}
+  _palletMover: {fileID: 4692951461648090800}
   PEnMov: {fileID: 0}
   Pallet1: {fileID: 100000, guid: f221f0787bd1f4a47bc5caa6b4429fb7, type: 3}
   Pallet2: {fileID: 100000, guid: 7831594fd0d6c0741a4a131f1a15ca03, type: 3}
@@ -27235,10 +27246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controlador: {fileID: 0}
-  miInput: 0
   Desde: {fileID: 818696516}
   Hasta: {fileID: 1501342510}
-  inputReader: {fileID: 0}
 --- !u!1001 &1472730523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34718,7 +34727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1854697800
 Transform:
   m_ObjectHideFlags: 0
@@ -34732,8 +34741,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2004558265}
   - {fileID: 542113846}
+  - {fileID: 2004558265}
   - {fileID: 1371460062}
   - {fileID: 1692049771}
   - {fileID: 1870519670}
@@ -37482,6 +37491,7 @@ MonoBehaviour:
   Componentes:
   - {fileID: 954157574}
   player: {fileID: 0}
+  _palletMover: {fileID: 538226977}
   PEnMov: {fileID: 0}
   Pallet1: {fileID: 100000, guid: f221f0787bd1f4a47bc5caa6b4429fb7, type: 3}
   Pallet2: {fileID: 100000, guid: 7831594fd0d6c0741a4a131f1a15ca03, type: 3}
@@ -41242,6 +41252,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8bcf2ab0dc5bd945bcef5afb60d8b8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4692951461648090800 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1670674237758032663, guid: 32f4809f565e809498e3193b21db633f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4692951461648090797}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9affb8c847ec48e4ea4065d6523b3e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &6185364976963186883
