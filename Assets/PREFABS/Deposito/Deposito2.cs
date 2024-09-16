@@ -10,6 +10,7 @@ public class Deposito2 : MonoBehaviour
     public ControladorDeDescarga Contr1;
     public ControladorDeDescarga Contr2;
 
+    [SerializeField] private Transform depositPoint;
     Collider[] PjColl;
 
     [SerializeField] private ColliderHandler colliderHandler;
@@ -49,7 +50,7 @@ public class Deposito2 : MonoBehaviour
                 if (player.ConBolasas())
                 {
                     Entrar(player);
-                    frenado.Destino = transform.position;
+                    frenado.Destino = depositPoint.position;
                     frenado.transform.forward = frenado.Destino - frenado.transform.position;
                     frenado.Frenar();
                 }
@@ -61,7 +62,7 @@ public class Deposito2 : MonoBehaviour
     {
         PjActual.VaciarInv();
         PjActual.GetComponent<Frenado>().RestaurarVel();
-        PjActual.GetComponent<Respawn>().Respawnear(transform.position, transform.forward);
+        PjActual.GetComponent<Respawn>().Respawnear(depositPoint.position, transform.forward);
 
         PjActual.GetComponent<Rigidbody>().useGravity = true;
         for (int i = 0; i < PjColl.Length; i++)

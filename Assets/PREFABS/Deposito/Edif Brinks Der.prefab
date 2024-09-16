@@ -604,6 +604,7 @@ MonoBehaviour:
   Vacio: 1
   Contr1: {fileID: 0}
   Contr2: {fileID: 0}
+  depositPoint: {fileID: 8268936015627438469}
   colliderHandler: {fileID: 3347676972781849523}
 --- !u!1 &3203865278297815544
 GameObject:
