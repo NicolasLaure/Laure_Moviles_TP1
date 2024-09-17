@@ -36565,6 +36565,8 @@ MonoBehaviour:
   gameTimer: {fileID: 3757382841737212722}
   contr1: {fileID: 542113845}
   contr2: {fileID: 2004558264}
+  contrCalib1: {fileID: 977799365}
+  contrCalib2: {fileID: 1432105383}
   tutorialP1: {fileID: 1466112525}
   tutorialP2: {fileID: 305290393}
 --- !u!114 &1936223692
@@ -36602,6 +36604,9 @@ MonoBehaviour:
   singlePlayerUI: {fileID: 3757382841737212723}
   player1UI: {fileID: 3757382841737212725}
   player2UI: {fileID: 3757382841737212724}
+  singlePlayerConfig: {fileID: 11400000, guid: 9cc2c88b9eb77b1459240d1a90780085, type: 2}
+  player1Config: {fileID: 11400000, guid: 4c7899980aeedd244bd5ab1a865cff24, type: 2}
+  player2Config: {fileID: 11400000, guid: e3f177092b2b26843a8754a7e2b5178e, type: 2}
 --- !u!1 &1941096366
 GameObject:
   m_ObjectHideFlags: 0

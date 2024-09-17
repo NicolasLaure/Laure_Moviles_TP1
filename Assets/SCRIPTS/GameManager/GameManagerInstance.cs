@@ -12,6 +12,9 @@ public class GameManagerInstance : MonoBehaviour
     [SerializeField] private ControladorDeDescarga contr1;
     [SerializeField] private ControladorDeDescarga contr2;
 
+    [SerializeField] private ContrCalibracion contrCalib1;
+    [SerializeField] private ContrCalibracion contrCalib2;
+
     [SerializeField] private PalletMover tutorialP1;
     [SerializeField] private PalletMover tutorialP2;
 
@@ -23,11 +26,13 @@ public class GameManagerInstance : MonoBehaviour
         gameManager.GameTimer = gameTimer;
         gameManager.SpawnPlayers();
 
+        gameManager.Player1.ContrCalib = contrCalib1;
         contr1.SetPlayer(gameManager.Player1);
         tutorialP1.InputReader = gameManager.Player1.GetComponent<InputReader>();
 
         if (gameManager.Player2 != null)
         {
+            gameManager.Player2.ContrCalib = contrCalib2;
             contr2.SetPlayer(gameManager.Player2);
             tutorialP2.InputReader = gameManager.Player2.GetComponent<InputReader>();
         }

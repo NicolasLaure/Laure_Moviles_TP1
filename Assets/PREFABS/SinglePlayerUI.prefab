@@ -53,9 +53,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  config: {fileID: 11400000, guid: 9cc2c88b9eb77b1459240d1a90780085, type: 2}
   tutorialUI: {fileID: 4739905797553594148}
   driveUI: {fileID: 4739905797273512222}
   downloadUI: {fileID: 4739905798334766081}
+  inventario: {fileID: 8492747256048705296}
+  dinero: {fileID: 8423381036529051597}
+  volante: {fileID: 4739905798749988654}
+  bonusRoot: {fileID: 4739905797376535832}
+  bonusFill: {fileID: 4739905797278608483}
+  bonusText: {fileID: 1137483127839539565}
+  tutoCalibrando: {fileID: 4739905797761097353}
+  tutoDescargando: {fileID: 4739905798303279871}
+  tutoFinalizado: {fileID: 4739905798699418571}
 --- !u!1 &3842033479676916176
 GameObject:
   m_ObjectHideFlags: 0

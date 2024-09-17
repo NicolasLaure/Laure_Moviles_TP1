@@ -1,6 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "PlayerConfig", menuName = "Player/Config", order = 0)]
 public class PlayerConfigSO : ScriptableObject
@@ -10,4 +10,6 @@ public class PlayerConfigSO : ScriptableObject
 
     public Camera calibrationCam;
     public Camera downloadCam;
+
+    public PlayerUI ui;
 }

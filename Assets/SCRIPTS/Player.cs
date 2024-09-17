@@ -145,7 +145,6 @@ public class Player : MonoBehaviour
     public void SetConfig()
     {
         GetComponent<ControlDireccion>().InputAct = config.input;
-        GetComponent<Visualizacion>().LadoAct = config.side;
-        GetComponent<Visualizacion>().SetCamerasViewPort(config.calibrationCam, config.downloadCam);
+        GetComponent<Visualizacion>().SetConfig(config);
     }
 }

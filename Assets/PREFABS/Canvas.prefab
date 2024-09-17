@@ -736,6 +736,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6820988684007539506, guid: db6086bb6cb40af44868891788f049a9,
+        type: 3}
+      propertyPath: config
+      value: 
+      objectReference: {fileID: 11400000, guid: e3f177092b2b26843a8754a7e2b5178e,
+        type: 2}
     - target: {fileID: 7457170465801273697, guid: db6086bb6cb40af44868891788f049a9,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -890,6 +896,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6820988684007539506, guid: db6086bb6cb40af44868891788f049a9,
+        type: 3}
+      propertyPath: config
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c7899980aeedd244bd5ab1a865cff24,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1019,6 +1031,27 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7451287360321897372, guid: 051320b10bae2ad43bfe03f547465384,
+        type: 3}
+      propertyPath: config
+      value: 
+      objectReference: {fileID: 11400000, guid: 9cc2c88b9eb77b1459240d1a90780085,
+        type: 2}
+    - target: {fileID: 7451287360321897372, guid: 051320b10bae2ad43bfe03f547465384,
+        type: 3}
+      propertyPath: tutoCalibrando
+      value: 
+      objectReference: {fileID: 1007803904145380807}
+    - target: {fileID: 7451287360321897372, guid: 051320b10bae2ad43bfe03f547465384,
+        type: 3}
+      propertyPath: tutoFinalizado
+      value: 
+      objectReference: {fileID: 1007803903741266053}
+    - target: {fileID: 7451287360321897372, guid: 051320b10bae2ad43bfe03f547465384,
+        type: 3}
+      propertyPath: tutoDescargando
+      value: 
+      objectReference: {fileID: 1007803903596913073}
     - target: {fileID: 7722354839704927496, guid: 051320b10bae2ad43bfe03f547465384,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -1029,6 +1062,24 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 051320b10bae2ad43bfe03f547465384, type: 3}
+--- !u!1 &1007803903596913073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4739905798303279871, guid: 051320b10bae2ad43bfe03f547465384,
+    type: 3}
+  m_PrefabInstance: {fileID: 5493256275704351566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1007803903741266053 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4739905798699418571, guid: 051320b10bae2ad43bfe03f547465384,
+    type: 3}
+  m_PrefabInstance: {fileID: 5493256275704351566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1007803904145380807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4739905797761097353, guid: 051320b10bae2ad43bfe03f547465384,
+    type: 3}
+  m_PrefabInstance: {fileID: 5493256275704351566}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5634257991653899075 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 147229764558827533, guid: 051320b10bae2ad43bfe03f547465384,

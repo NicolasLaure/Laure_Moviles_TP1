@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,69 +30,60 @@ public class Visualizacion : MonoBehaviour
     private Camera _CamCalibracion;
     private Camera _CamDescarga;
 
-    //EL DINERO QUE SE TIENE
-    public Text Dinero;
-
-    //EL VOLANTE
-    public Transform volante;
-
     //PARA EL INVENTARIO
     public float Parpadeo = 0.8f;
     public float TempParp = 0;
     public bool PrimIma = true;
     public Sprite[] InvSprites;
 
-    public Image Inventario;
-
-    //BONO DE DESCARGA
-    public GameObject BonusRoot;
-    public Image BonusFill;
-    public Text BonusText;
-
-
-    //CALIBRACION MAS TUTO BASICO
-    public GameObject TutoCalibrando;
-    public GameObject TutoDescargando;
-    public GameObject TutoFinalizado;
+    [SerializeField] private PlayerConfigSO _config;
 
     // Use this for initialization
     void Start()
     {
         Direccion = GetComponent<ControlDireccion>();
         Pj = GetComponent<Player>();
-
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (_config.ui == null)
+            return;
+
         switch (Pj.EstAct)
         {
             case Player.Estados.EnConduccion:
                 //inventario
-                //SetInv();
+                SetInv();
                 //contador de dinero
-                //SetDinero();
+                SetDinero();
                 //el volante
-                //SetVolante();
+                SetVolante();
                 break;
 
             case Player.Estados.EnDescarga:
                 //inventario
-                //SetInv();
+                SetInv();
                 //el bonus
-                //SetBonus();
+                SetBonus();
                 //contador de dinero
-                //SetDinero();
+                SetDinero();
                 break;
 
-            // case Player.Estados.EnTutorial:
-            //     SetTuto();
-            //     break;
+            case Player.Estados.EnTutorial:
+                SetTuto();
+                break;
         }
     }
 
     //--------------------------------------------------------//
+    public void SetConfig(PlayerConfigSO config)
+    {
+        _config = config;
+        LadoAct = _config.side;
+        SetCamerasViewPort(_config.calibrationCam, _config.downloadCam);
+    }
 
     public void CambiarATutorial()
     {
@@ -150,25 +142,25 @@ public class Visualizacion : MonoBehaviour
     {
         if (Pj.ContrDesc.PEnMov != null)
         {
-            BonusRoot.SetActive(true);
+            _config.ui.BonusRoot.SetActive(true);
 
             //el fondo
             float bonus = Pj.ContrDesc.Bonus;
             float max = (float)(int)Pallet.Valores.Valor1;
             float t = bonus / max;
-            BonusFill.fillAmount = t;
+            _config.ui.BonusFill.fillAmount = t;
             //la bolsa
-            BonusText.text = "$" + Pj.ContrDesc.Bonus.ToString("0");
+            _config.ui.BonusText.text = "$" + Pj.ContrDesc.Bonus.ToString("0");
         }
         else
         {
-            BonusRoot.SetActive(false);
+            _config.ui.BonusRoot.SetActive(false);
         }
     }
 
     void SetDinero()
     {
-        Dinero.text = PrepararNumeros(Pj.Dinero);
+        _config.ui.Dinero.text = PrepararNumeros(Pj.Dinero);
     }
 
     void SetTuto()
@@ -176,21 +168,21 @@ public class Visualizacion : MonoBehaviour
         switch (Pj.ContrCalib.EstAct)
         {
             case ContrCalibracion.Estados.Calibrando:
-                TutoCalibrando.SetActive(true);
-                TutoDescargando.SetActive(false);
-                TutoFinalizado.SetActive(false);
+                _config.ui.TutoCalibrando.SetActive(true);
+                _config.ui.TutoDescargando.SetActive(false);
+                _config.ui.TutoFinalizado.SetActive(false);
                 break;
 
             case ContrCalibracion.Estados.Tutorial:
-                TutoCalibrando.SetActive(false);
-                TutoDescargando.SetActive(true);
-                TutoFinalizado.SetActive(false);
+                _config.ui.TutoCalibrando.SetActive(false);
+                _config.ui.TutoDescargando.SetActive(true);
+                _config.ui.TutoFinalizado.SetActive(false);
                 break;
 
             case ContrCalibracion.Estados.Finalizado:
-                TutoCalibrando.SetActive(false);
-                TutoDescargando.SetActive(false);
-                TutoFinalizado.SetActive(true);
+                _config.ui.TutoCalibrando.SetActive(false);
+                _config.ui.TutoDescargando.SetActive(false);
+                _config.ui.TutoFinalizado.SetActive(true);
                 break;
         }
     }
@@ -198,9 +190,9 @@ public class Visualizacion : MonoBehaviour
     void SetVolante()
     {
         float angulo = -45 * Direccion.GetGiro();
-        Vector3 rot = volante.localEulerAngles;
+        Vector3 rot = _config.ui.Volante.localEulerAngles;
         rot.z = angulo;
-        volante.localEulerAngles = rot;
+        _config.ui.Volante.localEulerAngles = rot;
     }
 
     void SetInv()
@@ -227,17 +219,17 @@ public class Visualizacion : MonoBehaviour
 
                 if (PrimIma)
                 {
-                    Inventario.sprite = InvSprites[3];
+                    _config.ui.Inventario.sprite = InvSprites[3];
                 }
                 else
                 {
-                    Inventario.sprite = InvSprites[4];
+                    _config.ui.Inventario.sprite = InvSprites[4];
                 }
             }
         }
         else
         {
-            Inventario.sprite = InvSprites[contador];
+            _config.ui.Inventario.sprite = InvSprites[contador];
         }
     }
 
