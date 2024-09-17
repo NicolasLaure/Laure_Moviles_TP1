@@ -14,3 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: 0
   side: 0
+  calibrationCam: {fileID: 0}
+  downloadCam: {fileID: 0}
+  ui: {fileID: 0}
+  trucks:
+  - {fileID: 1012280528, guid: 73c8674c016cff840a7b53fade1ac74b, type: 3}
+  - {fileID: 620922890, guid: 3e4746037f241044a8e56125907b4430, type: 3}
+  - {fileID: 2034777432, guid: 267529afbcbd8844c8ccfdb4f01dc768, type: 3}
+  - {fileID: 1350861140, guid: d9dd7941c209c404e93b510e8f9f6f11, type: 3}

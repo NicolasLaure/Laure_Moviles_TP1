@@ -34,7 +34,6 @@ public class Visualizacion : MonoBehaviour
     public float Parpadeo = 0.8f;
     public float TempParp = 0;
     public bool PrimIma = true;
-    public Sprite[] InvSprites;
 
     [SerializeField] private PlayerConfigSO _config;
 
@@ -211,25 +210,21 @@ public class Visualizacion : MonoBehaviour
             if (TempParp >= Parpadeo)
             {
                 TempParp = 0;
-                if (PrimIma)
-                    PrimIma = false;
-                else
-                    PrimIma = true;
-
+                PrimIma = !PrimIma;
 
                 if (PrimIma)
                 {
-                    _config.ui.Inventario.sprite = InvSprites[3];
+                    _config.ui.Inventario.sprite = _config.trucks[3];
                 }
                 else
                 {
-                    _config.ui.Inventario.sprite = InvSprites[4];
+                    _config.ui.Inventario.sprite = _config.trucks[0];
                 }
             }
         }
         else
         {
-            _config.ui.Inventario.sprite = InvSprites[contador];
+            _config.ui.Inventario.sprite = _config.trucks[contador];
         }
     }
 

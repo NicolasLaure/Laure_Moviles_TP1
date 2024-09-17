@@ -12,4 +12,6 @@ public class PlayerConfigSO : ScriptableObject
     public Camera downloadCam;
 
     public PlayerUI ui;
+
+    public Sprite[] trucks;
 }
