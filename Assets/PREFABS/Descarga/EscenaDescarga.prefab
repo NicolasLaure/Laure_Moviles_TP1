@@ -317,7 +317,7 @@ Camera:
     width: 0.5
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 80
   field of view: 60
   orthographic: 0
   orthographic size: 100
@@ -474,7 +474,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controlador: {fileID: 0}
-  miInput: 0
   Desde: {fileID: 3081824818427811308}
   Hasta: {fileID: 3920838058182514579}
 --- !u!1 &345127696066760773
@@ -1769,6 +1768,7 @@ MonoBehaviour:
   Controlador: {fileID: 0}
   CintaReceptora: {fileID: 3920838058182514579}
   Valor: 100000
+  Contenido: {fileID: 0}
   Anim: 0
   Intervalo: 0.4
   Permanencia: 0.1
@@ -7162,6 +7162,7 @@ MonoBehaviour:
   Controlador: {fileID: 0}
   CintaReceptora: {fileID: 3920838058182514579}
   Valor: 500000
+  Contenido: {fileID: 0}
   Anim: 0
   Intervalo: 0.4
   Permanencia: 0.1
@@ -10923,6 +10924,7 @@ MonoBehaviour:
   Controlador: {fileID: 0}
   CintaReceptora: {fileID: 3920838058182514579}
   Valor: 250000
+  Contenido: {fileID: 0}
   Anim: 0
   Intervalo: 0.4
   Permanencia: 0.1
