@@ -19840,7 +19840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManagerSo: {fileID: 11400000, guid: baf81ba561b24d44b874bb533358a52c, type: 2}
   playerNumber: 0
-  TiempEspCalib: 1
+  TiempEspCalib: 0.01
   EstAct: 0
   Partida: {fileID: 818696516}
   Llegada: {fileID: 1501342510}
@@ -28018,7 +28018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManagerSo: {fileID: 11400000, guid: baf81ba561b24d44b874bb533358a52c, type: 2}
   playerNumber: 1
-  TiempEspCalib: 1
+  TiempEspCalib: 0.01
   EstAct: 0
   Partida: {fileID: 958384778}
   Llegada: {fileID: 753810840}
