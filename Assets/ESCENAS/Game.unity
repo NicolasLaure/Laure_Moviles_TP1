@@ -30639,6 +30639,8 @@ MonoBehaviour:
   - {fileID: 143186747}
   - {fileID: 1956213111}
   - {fileID: 768657052}
+  onBagDespawnedEvent: {fileID: 11400000, guid: 3f0917d75c4ce174088deb9880368b0c,
+    type: 2}
 --- !u!114 &1590687280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30653,6 +30655,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolConfig: {fileID: 11400000, guid: 5702f5aac1ad65a47a6464b6700989dd, type: 2}
   count: 10
+  onBagDespawnedEvent: {fileID: 11400000, guid: 3f0917d75c4ce174088deb9880368b0c,
+    type: 2}
 --- !u!1 &1594940296
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,12 +6,20 @@ using BagsPool;
 public class BagsSpawner : MonoBehaviour
 {
     [SerializeField] private List<Transform> spawnPositions = new List<Transform>();
+    [SerializeField] private VoidEventChannelSO onBagDespawnedEvent;
 
     private int _currentIndex = 0;
 
     private void Awake()
     {
         _currentIndex = 0;
+        onBagDespawnedEvent.onVoidEvent += HandleSpawnBag;
+    }
+
+    private void OnDestroy()
+    {
+        if (onBagDespawnedEvent != null)
+            onBagDespawnedEvent.onVoidEvent -= HandleSpawnBag;
     }
 
     private void Start()

@@ -9,10 +9,12 @@ namespace ObjectPool
         public static ObjectPool instance;
         [SerializeField] private PoolConfigSO poolConfig;
         [SerializeField] private int count;
+        [SerializeField] private VoidEventChannelSO onBagDespawnedEvent;
 
         private List<GameObject> _objects;
 
         public int Count => count;
+
         private void Awake()
         {
             if (instance != null)
@@ -57,15 +59,22 @@ namespace ObjectPool
             return false;
         }
 
-        public void ReturnObject(GameObject objectToDisable)
+        public bool TryReturnObject(GameObject objectToDisable)
         {
-            foreach (GameObject _object in _objects)
+            if (_objects.Contains(objectToDisable))
             {
-                if (_object == objectToDisable)
-                    _object.SetActive(false);
+                foreach (GameObject _object in _objects)
+                {
+                    if (_object == objectToDisable)
+                    {
+                        _object.SetActive(false);
+                        onBagDespawnedEvent.RaiseEvent();
+                        return true;
+                    }
+                }
             }
 
-            throw new Exception("Object Was not part of the pool");
+            return false;
         }
     }
 }
