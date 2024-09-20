@@ -24,3 +24,5 @@ MonoBehaviour:
   - {fileID: -2029615798, guid: 497ec0d7ee882c54fad251f36ce54b53, type: 3}
   onlastPositionChannel: {fileID: 11400000, guid: b2be28aa0f59b4d4ba68bcd4727ba704,
     type: 2}
+  truckCeilingMaterial: {fileID: 2100000, guid: 9029984754bc8cc4c853d640e1d05493,
+    type: 2}

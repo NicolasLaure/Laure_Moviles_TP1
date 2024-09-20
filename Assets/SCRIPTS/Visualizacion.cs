@@ -37,6 +37,8 @@ public class Visualizacion : MonoBehaviour
 
     [SerializeField] private PlayerConfigSO _config;
 
+    [SerializeField] private MeshRenderer truckCeiling;
+
     // Use this for initialization
     void Start()
     {
@@ -82,6 +84,12 @@ public class Visualizacion : MonoBehaviour
         _config = config;
         LadoAct = _config.side;
         SetCamerasViewPort(_config.calibrationCam, _config.downloadCam);
+        SetTruckCeilingMaterial();
+    }
+
+    private void SetTruckCeilingMaterial()
+    {
+        truckCeiling.material = _config.truckCeilingMaterial;
     }
 
     public void CambiarATutorial()

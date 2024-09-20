@@ -686,6 +686,7 @@ MonoBehaviour:
   TempParp: 0
   PrimIma: 1
   _config: {fileID: 0}
+  truckCeiling: {fileID: 6392758176884291965}
 --- !u!114 &8838392006904907783
 MonoBehaviour:
   m_ObjectHideFlags: 0

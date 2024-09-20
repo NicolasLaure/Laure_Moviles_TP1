@@ -16,4 +16,7 @@ public class PlayerConfigSO : ScriptableObject
     public Sprite[] trucks;
 
     public Vector3EventChannelSO onlastPositionChannel;
+    
+    public Material truckCeilingMaterial;
+
 }
