@@ -12,6 +12,7 @@ namespace ObjectPool
 
         private List<GameObject> _objects;
 
+        public int Count => count;
         private void Awake()
         {
             if (instance != null)
@@ -26,7 +27,7 @@ namespace ObjectPool
         private void Start()
         {
             _objects = new List<GameObject>();
-            
+
             int configObjectIndex = 0;
             for (int i = 0; i < count; i++)
             {
@@ -40,18 +41,20 @@ namespace ObjectPool
             }
         }
 
-        public GameObject GetPooledObject()
+        public bool TryGetPooledObject(out GameObject pooledObject)
         {
+            pooledObject = null;
             for (int i = 0; i < _objects.Count; i++)
             {
                 if (_objects[i].activeInHierarchy)
                     continue;
 
                 _objects[i].SetActive(true);
-                return _objects[i];
+                pooledObject = _objects[i];
+                return true;
             }
 
-            throw new Exception("No Inactive Objects on pool");
+            return false;
         }
 
         public void ReturnObject(GameObject objectToDisable)
