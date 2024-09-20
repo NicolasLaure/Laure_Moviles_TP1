@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using BagsPool;
@@ -10,10 +11,9 @@ public class BagsSpawner : MonoBehaviour
 
     private int _currentIndex = 0;
 
-    private void Awake()
+    private void Start()
     {
-        _currentIndex = 0;
-        onBagDespawnedEvent.onVoidEvent += HandleSpawnBag;
+        StartCoroutine(Initialize());
     }
 
     private void OnDestroy()
@@ -22,12 +22,16 @@ public class BagsSpawner : MonoBehaviour
             onBagDespawnedEvent.onVoidEvent -= HandleSpawnBag;
     }
 
-    private void Start()
+    private IEnumerator Initialize()
     {
+        yield return null;
+        _currentIndex = 0;
         for (int i = 0; i < BagPool.instance.Count; i++)
         {
             HandleSpawnBag();
         }
+
+        onBagDespawnedEvent.onVoidEvent += HandleSpawnBag;
     }
 
     void HandleSpawnBag()
