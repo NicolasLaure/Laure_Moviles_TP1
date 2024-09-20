@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
     public event Action onTutorialEnter;
     public event Action onDriveEnter;
     public event Action onDownloadEnter;
+
     //------------------------------------------------------------------//
 
     void Start()
@@ -48,6 +49,11 @@ public class Player : MonoBehaviour
         MiVisualizacion = GetComponent<Visualizacion>();
     }
 
+    private void Update()
+    {
+        if (EstAct == Estados.EnConduccion)
+            config.onlastPositionChannel.RaiseEvent(transform.position);
+    }
     //------------------------------------------------------------------//
 
     public bool AgregarBolsa(Bolsa b)

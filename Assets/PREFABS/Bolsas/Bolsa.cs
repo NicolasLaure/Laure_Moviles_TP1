@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 using BagsPool;
@@ -15,10 +16,19 @@ public class Bolsa : MonoBehaviour
     public GameObject Particulas;
     public float particlesDuration = 2.5f;
 
+    [SerializeField] private Vector3EventChannelSO onLastPlayerPositionUpdate;
+
     // Use this for initialization
     void Start()
     {
         Monto = Pallet.Valores.Valor2;
+        onLastPlayerPositionUpdate.onVector3Event += HandleLastPlayerPositionUpdate;
+    }
+
+    private void OnDestroy()
+    {
+        if (onLastPlayerPositionUpdate != false)
+            onLastPlayerPositionUpdate.onVector3Event -= HandleLastPlayerPositionUpdate;
     }
 
     void OnTriggerEnter(Collider coll)
@@ -29,6 +39,12 @@ public class Bolsa : MonoBehaviour
             if (Pj.AgregarBolsa(this))
                 Desaparecer();
         }
+    }
+
+    public void HandleLastPlayerPositionUpdate(Vector3 latestPosition)
+    {
+        if (latestPosition.z > transform.position.z)
+            Desaparecer();
     }
 
     public void Desaparecer()

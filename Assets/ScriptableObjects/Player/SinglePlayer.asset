@@ -22,3 +22,5 @@ MonoBehaviour:
   - {fileID: 620922890, guid: 3e4746037f241044a8e56125907b4430, type: 3}
   - {fileID: 2034777432, guid: 267529afbcbd8844c8ccfdb4f01dc768, type: 3}
   - {fileID: 1350861140, guid: d9dd7941c209c404e93b510e8f9f6f11, type: 3}
+  onlastPositionChannel: {fileID: 11400000, guid: ad6aeac3442deca4ea193f3406d3237d,
+    type: 2}

@@ -14,4 +14,6 @@ public class PlayerConfigSO : ScriptableObject
     public PlayerUI ui;
 
     public Sprite[] trucks;
+
+    public Vector3EventChannelSO onlastPositionChannel;
 }

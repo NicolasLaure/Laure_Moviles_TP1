@@ -39694,6 +39694,7 @@ GameObject:
   - component: {fileID: 1936223691}
   - component: {fileID: 1936223692}
   - component: {fileID: 1936223693}
+  - component: {fileID: 1936223694}
   m_Layer: 0
   m_Name: GameMgr
   m_TagString: Untagged
@@ -39783,6 +39784,24 @@ MonoBehaviour:
   singlePlayerConfig: {fileID: 11400000, guid: 9cc2c88b9eb77b1459240d1a90780085, type: 2}
   player1Config: {fileID: 11400000, guid: 4c7899980aeedd244bd5ab1a865cff24, type: 2}
   player2Config: {fileID: 11400000, guid: e3f177092b2b26843a8754a7e2b5178e, type: 2}
+--- !u!114 &1936223694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936223687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e05b0f96cac1384fa43d15f9c990263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPlayer1LastPositionUpdate: {fileID: 11400000, guid: ad6aeac3442deca4ea193f3406d3237d,
+    type: 2}
+  onPlayer2LastPositionUpdate: {fileID: 11400000, guid: b2be28aa0f59b4d4ba68bcd4727ba704,
+    type: 2}
+  onLastPlayerPositionUpdate: {fileID: 11400000, guid: 042957e8e2482f64884b914d523209c0,
+    type: 2}
 --- !u!1 &1941096366
 GameObject:
   m_ObjectHideFlags: 0
