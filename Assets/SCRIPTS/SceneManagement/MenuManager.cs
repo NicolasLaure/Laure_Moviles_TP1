@@ -6,16 +6,17 @@ namespace SceneManagement
     public class MenuManager : MonoBehaviour
     {
         [SerializeField] private GameConfig config;
+
         public void PlaySinglePlayer()
         {
             config.isSinglePlayer = true;
-            SceneManager.LoadScene(1);
+            Loader.ChangeScene(2);
         }
-        
+
         public void PlayMultiPlayer()
         {
             config.isSinglePlayer = false;
-            SceneManager.LoadScene(1);
+            Loader.ChangeScene(2);
         }
     }
 }
