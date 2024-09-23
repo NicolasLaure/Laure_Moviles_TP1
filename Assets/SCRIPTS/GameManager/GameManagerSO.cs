@@ -8,6 +8,7 @@ public class GameManagerSO : ScriptableObject
     [SerializeField] private GameConfig config;
 
     public float TiempoDeJuego = 60;
+    private float _currentGameTime = 60;
 
     public enum EstadoJuego
     {
@@ -88,10 +89,10 @@ public class GameManagerSO : ScriptableObject
                 //SKIP LA CARRERA
                 if (Input.GetKey(KeyCode.Alpha9))
                 {
-                    TiempoDeJuego = 0;
+                    _currentGameTime = 0;
                 }
 
-                if (TiempoDeJuego <= 0)
+                if (_currentGameTime <= 0)
                 {
                     FinalizarCarrera();
                 }
@@ -120,9 +121,9 @@ public class GameManagerSO : ScriptableObject
                 else
                 {
                     //baja el tiempo del juego
-                    TiempoDeJuego -= T.GetDT();
+                    _currentGameTime -= T.GetDT();
 
-                    GameTimer.UpdateText(TiempoDeJuego.ToString("00"));
+                    GameTimer.UpdateText(_currentGameTime.ToString("00"));
                 }
 
 
@@ -178,7 +179,7 @@ public class GameManagerSO : ScriptableObject
     {
         EstAct = EstadoJuego.Finalizado;
 
-        TiempoDeJuego = 0;
+        _currentGameTime = 0;
 
         if (Player1.Dinero > Player2.Dinero)
         {
@@ -216,7 +217,7 @@ public class GameManagerSO : ScriptableObject
     {
         EstAct = EstadoJuego.Jugando;
         ConteoParaInicion = 3;
-        TiempoDeJuego = 60;
+        ResetTimer();
         ConteoRedresivo = true;
 
         for (int i = 0; i < ObjsCarrera.Length; i++)
@@ -302,5 +303,10 @@ public class GameManagerSO : ScriptableObject
     public bool IsSinglePlayer()
     {
         return config.isSinglePlayer;
+    }
+
+    public void ResetTimer()
+    {
+        _currentGameTime = TiempoDeJuego;
     }
 }

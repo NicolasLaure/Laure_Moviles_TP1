@@ -24,6 +24,8 @@ public class GameManagerInstance : MonoBehaviour
         //Instantiate players
         gameManager.StartCountDown = startingCountDown;
         gameManager.GameTimer = gameTimer;
+        gameManager.ResetTimer();
+        gameManager.EstAct = GameManagerSO.EstadoJuego.Calibrando;
         gameManager.SpawnPlayers();
 
         gameManager.Player1.ContrCalib = contrCalib1;
