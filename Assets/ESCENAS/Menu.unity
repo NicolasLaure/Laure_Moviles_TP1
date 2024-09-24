@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 754264}
   - component: {fileID: 754266}
   - component: {fileID: 754265}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelFR.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 22685318}
   - component: {fileID: 22685320}
   - component: {fileID: 22685319}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 37334250}
   - component: {fileID: 37334252}
   - component: {fileID: 37334251}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 52708212}
   - component: {fileID: 52708214}
   - component: {fileID: 52708213}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: DiscBrakeRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -755,7 +755,7 @@ GameObject:
   - component: {fileID: 53352332}
   - component: {fileID: 53352334}
   - component: {fileID: 53352333}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -840,8 +840,7 @@ GameObject:
   - component: {fileID: 64925855}
   - component: {fileID: 64925858}
   - component: {fileID: 64925857}
-  - component: {fileID: 64925856}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Truck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -894,28 +893,6 @@ Transform:
   - {fileID: 1768142673}
   m_Father: {fileID: 601070346}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &64925856
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 64925854}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: a240d8cde3be79f4e86b52e5ad9aa15a, type: 3}
 --- !u!23 &64925857
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -936,8 +913,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9de7a6a53089c2f47b0f4a12f4e19fce, type: 2}
-  - {fileID: 2100000, guid: c4216b4323cc8e546afe6cd6b349805d, type: 2}
+  - {fileID: 2100000, guid: 6a4bbfb69e019cc4bb040b24e43d1f9e, type: 2}
+  - {fileID: 2100000, guid: db255bcb57464534a887b00391c90ce1, type: 2}
   - {fileID: 2100000, guid: 1498ef4e410b9724c9106000c169aa22, type: 2}
   - {fileID: 2100000, guid: c05e5ea357e696c49afb1eeedb59c351, type: 2}
   - {fileID: 2100000, guid: f2edd1b2cd382214e81b1f41ad9a9f5e, type: 2}
@@ -987,7 +964,7 @@ GameObject:
   - component: {fileID: 80652291}
   - component: {fileID: 80652293}
   - component: {fileID: 80652292}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1070,7 +1047,7 @@ GameObject:
   - component: {fileID: 87328598}
   - component: {fileID: 87328600}
   - component: {fileID: 87328599}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1152,7 +1129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 100659543}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelFL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1186,7 +1163,7 @@ GameObject:
   - component: {fileID: 105860533}
   - component: {fileID: 105860535}
   - component: {fileID: 105860534}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Middle Right Door - Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1269,7 +1246,7 @@ GameObject:
   - component: {fileID: 114801327}
   - component: {fileID: 114801329}
   - component: {fileID: 114801328}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1351,7 +1328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 116828645}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelRR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1383,7 +1360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 151623784}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelFR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1461,7 +1438,7 @@ GameObject:
   - component: {fileID: 208560185}
   - component: {fileID: 208560187}
   - component: {fileID: 208560186}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelRR.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1680,7 +1657,7 @@ GameObject:
   - component: {fileID: 270880810}
   - component: {fileID: 270880812}
   - component: {fileID: 270880811}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1764,7 +1741,7 @@ GameObject:
   - component: {fileID: 316740871}
   - component: {fileID: 316740873}
   - component: {fileID: 316740872}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: 123456
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1930,7 +1907,7 @@ GameObject:
   - component: {fileID: 334274156}
   - component: {fileID: 334274158}
   - component: {fileID: 334274157}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Front piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2013,7 +1990,7 @@ GameObject:
   - component: {fileID: 342863240}
   - component: {fileID: 342863242}
   - component: {fileID: 342863241}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2316,7 +2293,7 @@ GameObject:
   - component: {fileID: 412371368}
   - component: {fileID: 412371370}
   - component: {fileID: 412371369}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Middle Left Door - Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2400,7 +2377,7 @@ GameObject:
   - component: {fileID: 419798325}
   - component: {fileID: 419798327}
   - component: {fileID: 419798326}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Cylinder004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2483,7 +2460,7 @@ GameObject:
   - component: {fileID: 423261698}
   - component: {fileID: 423261700}
   - component: {fileID: 423261699}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2566,7 +2543,7 @@ GameObject:
   - component: {fileID: 455257304}
   - component: {fileID: 455257306}
   - component: {fileID: 455257305}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Innertube 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2649,7 +2626,7 @@ GameObject:
   - component: {fileID: 455360647}
   - component: {fileID: 455360649}
   - component: {fileID: 455360648}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: TechoConNumero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2732,7 +2709,7 @@ GameObject:
   - component: {fileID: 484957125}
   - component: {fileID: 484957127}
   - component: {fileID: 484957126}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Torus001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2815,7 +2792,7 @@ GameObject:
   - component: {fileID: 491654882}
   - component: {fileID: 491654884}
   - component: {fileID: 491654883}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Truck - Front Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2940,7 +2917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 527755117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Object0034 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2973,7 +2950,7 @@ GameObject:
   - component: {fileID: 538918475}
   - component: {fileID: 538918477}
   - component: {fileID: 538918476}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3258,7 +3235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 601070346}
   - component: {fileID: 601070347}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: camion entero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3312,7 +3289,7 @@ GameObject:
   - component: {fileID: 608413905}
   - component: {fileID: 608413907}
   - component: {fileID: 608413906}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Front piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3395,7 +3372,7 @@ GameObject:
   - component: {fileID: 669938854}
   - component: {fileID: 669938856}
   - component: {fileID: 669938855}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: DiscBrakeRR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3479,7 +3456,7 @@ GameObject:
   - component: {fileID: 679325190}
   - component: {fileID: 679325192}
   - component: {fileID: 679325191}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Parte de atras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3563,7 +3540,7 @@ GameObject:
   - component: {fileID: 680260016}
   - component: {fileID: 680260018}
   - component: {fileID: 680260017}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3648,7 +3625,7 @@ GameObject:
   - component: {fileID: 718892873}
   - component: {fileID: 718892875}
   - component: {fileID: 718892874}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Metal trasero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3811,7 +3788,7 @@ GameObject:
   - component: {fileID: 789339071}
   - component: {fileID: 789339073}
   - component: {fileID: 789339072}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3961,7 +3938,7 @@ GameObject:
   - component: {fileID: 804094420}
   - component: {fileID: 804094422}
   - component: {fileID: 804094421}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4091,7 +4068,7 @@ GameObject:
   - component: {fileID: 889390146}
   - component: {fileID: 889390148}
   - component: {fileID: 889390147}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Front piece 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4241,7 +4218,7 @@ GameObject:
   - component: {fileID: 893432210}
   - component: {fileID: 893432212}
   - component: {fileID: 893432211}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Buyer 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4375,7 +4352,7 @@ GameObject:
   - component: {fileID: 900529992}
   - component: {fileID: 900529994}
   - component: {fileID: 900529993}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4459,7 +4436,7 @@ GameObject:
   - component: {fileID: 924585518}
   - component: {fileID: 924585520}
   - component: {fileID: 924585519}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4627,7 +4604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 974683888}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4732,7 +4709,7 @@ GameObject:
   - component: {fileID: 988015038}
   - component: {fileID: 988015040}
   - component: {fileID: 988015039}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Front Left Door - Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4815,7 +4792,7 @@ GameObject:
   - component: {fileID: 991844457}
   - component: {fileID: 991844459}
   - component: {fileID: 991844458}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Metal Delantero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4900,7 +4877,7 @@ GameObject:
   - component: {fileID: 992841523}
   - component: {fileID: 992841525}
   - component: {fileID: 992841524}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Buyer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4985,7 +4962,7 @@ GameObject:
   - component: {fileID: 1004400005}
   - component: {fileID: 1004400007}
   - component: {fileID: 1004400006}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Espejos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5120,7 +5097,7 @@ GameObject:
   - component: {fileID: 1028192547}
   - component: {fileID: 1028192549}
   - component: {fileID: 1028192548}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5204,7 +5181,7 @@ GameObject:
   - component: {fileID: 1054912860}
   - component: {fileID: 1054912862}
   - component: {fileID: 1054912861}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Buyer 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5288,7 +5265,7 @@ GameObject:
   - component: {fileID: 1074724133}
   - component: {fileID: 1074724135}
   - component: {fileID: 1074724134}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5406,7 +5383,7 @@ GameObject:
   - component: {fileID: 1129743816}
   - component: {fileID: 1129743818}
   - component: {fileID: 1129743817}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelRL.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5492,7 +5469,7 @@ GameObject:
   - component: {fileID: 1142656024}
   - component: {fileID: 1142656026}
   - component: {fileID: 1142656025}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Middle Right Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5579,7 +5556,7 @@ GameObject:
   - component: {fileID: 1181943202}
   - component: {fileID: 1181943204}
   - component: {fileID: 1181943203}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5663,7 +5640,7 @@ GameObject:
   - component: {fileID: 1184149212}
   - component: {fileID: 1184149214}
   - component: {fileID: 1184149213}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: TechoConNumero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5792,7 +5769,7 @@ GameObject:
   - component: {fileID: 1206361311}
   - component: {fileID: 1206361313}
   - component: {fileID: 1206361312}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Front piece 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5910,7 +5887,7 @@ GameObject:
   - component: {fileID: 1220294460}
   - component: {fileID: 1220294462}
   - component: {fileID: 1220294461}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5994,7 +5971,7 @@ GameObject:
   - component: {fileID: 1222996823}
   - component: {fileID: 1222996825}
   - component: {fileID: 1222996824}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Back Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6081,7 +6058,7 @@ GameObject:
   - component: {fileID: 1233255692}
   - component: {fileID: 1233255694}
   - component: {fileID: 1233255693}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6164,7 +6141,7 @@ GameObject:
   - component: {fileID: 1264654240}
   - component: {fileID: 1264654242}
   - component: {fileID: 1264654241}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6447,12 +6424,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBeingHovered: 0
   _inputReader: {fileID: 181727656}
-  text: {fileID: 1280099441}
-  normalColor: {r: 0.09411765, g: 0.21176471, b: 1, a: 1}
-  highlightedColor: {r: 0, g: 0.06493521, b: 0.5, a: 1}
   onButtonPressed:
     m_PersistentCalls:
       m_Calls: []
+  text: {fileID: 1280099441}
+  normalColor: {r: 0.09411765, g: 0.21176471, b: 1, a: 1}
+  highlightedColor: {r: 0, g: 0.06493521, b: 0.5, a: 1}
 --- !u!1 &1301801027
 GameObject:
   m_ObjectHideFlags: 0
@@ -6464,7 +6441,7 @@ GameObject:
   - component: {fileID: 1301801028}
   - component: {fileID: 1301801030}
   - component: {fileID: 1301801029}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: DiscBrakeFR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6615,7 +6592,7 @@ GameObject:
   - component: {fileID: 1311050306}
   - component: {fileID: 1311050308}
   - component: {fileID: 1311050307}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6967,7 +6944,7 @@ GameObject:
   - component: {fileID: 1365420037}
   - component: {fileID: 1365420039}
   - component: {fileID: 1365420038}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Cone001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7051,7 +7028,7 @@ GameObject:
   - component: {fileID: 1366809236}
   - component: {fileID: 1366809238}
   - component: {fileID: 1366809237}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Sphere004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7143,7 +7120,7 @@ GameObject:
   - component: {fileID: 1439761702}
   - component: {fileID: 1439761704}
   - component: {fileID: 1439761703}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7226,7 +7203,7 @@ GameObject:
   - component: {fileID: 1457536486}
   - component: {fileID: 1457536488}
   - component: {fileID: 1457536487}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Front Left Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7311,7 +7288,7 @@ GameObject:
   - component: {fileID: 1471155236}
   - component: {fileID: 1471155238}
   - component: {fileID: 1471155237}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7395,7 +7372,7 @@ GameObject:
   - component: {fileID: 1475261808}
   - component: {fileID: 1475261810}
   - component: {fileID: 1475261809}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7480,7 +7457,7 @@ GameObject:
   - component: {fileID: 1476631334}
   - component: {fileID: 1476631336}
   - component: {fileID: 1476631335}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7563,7 +7540,7 @@ GameObject:
   - component: {fileID: 1479440983}
   - component: {fileID: 1479440985}
   - component: {fileID: 1479440984}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7780,7 +7757,7 @@ GameObject:
   - component: {fileID: 1540586547}
   - component: {fileID: 1540586549}
   - component: {fileID: 1540586548}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Innertube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7863,7 +7840,7 @@ GameObject:
   - component: {fileID: 1578298284}
   - component: {fileID: 1578298286}
   - component: {fileID: 1578298285}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Front Right Door - Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8149,7 +8126,7 @@ GameObject:
   - component: {fileID: 1640601020}
   - component: {fileID: 1640601022}
   - component: {fileID: 1640601021}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Back Door - Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8430,12 +8407,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBeingHovered: 0
   _inputReader: {fileID: 181727656}
-  text: {fileID: 1640943999}
-  normalColor: {r: 0.09411765, g: 0.21176471, b: 1, a: 1}
-  highlightedColor: {r: 0, g: 0.06493521, b: 0.5, a: 1}
   onButtonPressed:
     m_PersistentCalls:
       m_Calls: []
+  text: {fileID: 1640943999}
+  normalColor: {r: 0.09411765, g: 0.21176471, b: 1, a: 1}
+  highlightedColor: {r: 0, g: 0.06493521, b: 0.5, a: 1}
 --- !u!1001 &1648294115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8526,7 +8503,7 @@ GameObject:
   - component: {fileID: 1653268830}
   - component: {fileID: 1653268832}
   - component: {fileID: 1653268831}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8609,7 +8586,7 @@ GameObject:
   - component: {fileID: 1669265120}
   - component: {fileID: 1669265122}
   - component: {fileID: 1669265121}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Cylinder003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8771,7 +8748,7 @@ GameObject:
   - component: {fileID: 1716188696}
   - component: {fileID: 1716188698}
   - component: {fileID: 1716188697}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Luces delanteras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8854,7 +8831,7 @@ GameObject:
   - component: {fileID: 1768142673}
   - component: {fileID: 1768142675}
   - component: {fileID: 1768142674}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Innertube 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8938,7 +8915,7 @@ GameObject:
   - component: {fileID: 1768160683}
   - component: {fileID: 1768160685}
   - component: {fileID: 1768160684}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Innertube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9022,7 +8999,7 @@ GameObject:
   - component: {fileID: 1780929766}
   - component: {fileID: 1780929768}
   - component: {fileID: 1780929767}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Sphere005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9358,7 +9335,7 @@ GameObject:
   - component: {fileID: 1828103870}
   - component: {fileID: 1828103872}
   - component: {fileID: 1828103871}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Lueces arriba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9440,7 +9417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1829259258}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9473,7 +9450,7 @@ GameObject:
   - component: {fileID: 1839476362}
   - component: {fileID: 1839476364}
   - component: {fileID: 1839476363}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9556,7 +9533,7 @@ GameObject:
   - component: {fileID: 1849677828}
   - component: {fileID: 1849677830}
   - component: {fileID: 1849677829}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Middle Door Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9817,7 +9794,7 @@ GameObject:
   - component: {fileID: 1884282367}
   - component: {fileID: 1884282369}
   - component: {fileID: 1884282368}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelFL.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9903,7 +9880,7 @@ GameObject:
   - component: {fileID: 1885125538}
   - component: {fileID: 1885125540}
   - component: {fileID: 1885125539}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Buyer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9986,7 +9963,7 @@ GameObject:
   - component: {fileID: 1891410076}
   - component: {fileID: 1891410078}
   - component: {fileID: 1891410077}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10074,7 +10051,7 @@ GameObject:
   - component: {fileID: 1934005308}
   - component: {fileID: 1934005310}
   - component: {fileID: 1934005309}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10158,7 +10135,7 @@ GameObject:
   - component: {fileID: 1936001994}
   - component: {fileID: 1936001996}
   - component: {fileID: 1936001995}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Front Right Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10444,9 +10421,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBeingHovered: 0
   _inputReader: {fileID: 181727656}
-  text: {fileID: 1951314656}
-  normalColor: {r: 0.09411765, g: 0.21176471, b: 1, a: 1}
-  highlightedColor: {r: 0, g: 0.06493521, b: 0.5, a: 1}
   onButtonPressed:
     m_PersistentCalls:
       m_Calls:
@@ -10462,6 +10436,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  text: {fileID: 1951314656}
+  normalColor: {r: 0.09411765, g: 0.21176471, b: 1, a: 1}
+  highlightedColor: {r: 0, g: 0.06493521, b: 0.5, a: 1}
 --- !u!1 &1990575872
 GameObject:
   m_ObjectHideFlags: 0
@@ -10473,7 +10450,7 @@ GameObject:
   - component: {fileID: 1990575873}
   - component: {fileID: 1990575875}
   - component: {fileID: 1990575874}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: lUCESITAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10554,7 +10531,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2011333142}
-  m_Layer: 8
+  - component: {fileID: 2011333143}
+  - component: {fileID: 2011333144}
+  m_Layer: 6
   m_Name: Camion - new
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -10581,6 +10560,59 @@ Transform:
   - {fileID: 116828645}
   m_Father: {fileID: 44792241}
   m_LocalEulerAnglesHint: {x: 0, y: 89.039, z: 0}
+--- !u!114 &2011333143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011333141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6ef95c8911d9045865954659df5242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBeingHovered: 0
+  _inputReader: {fileID: 181727656}
+  onButtonPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 833723589}
+        m_TargetAssemblyTypeName: SceneManagement.MenuManager, Assembly-CSharp
+        m_MethodName: PlayMultiPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  renderer: {fileID: 64925857}
+  normalMaterial: {fileID: 2100000, guid: db255bcb57464534a887b00391c90ce1, type: 2}
+  highlightedMaterial: {fileID: 2100000, guid: a8fc94ee5b78c4f4d973b43eb6648ad4, type: 2}
+--- !u!65 &2011333144
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011333141}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.9863164, y: 3.984169, z: 7.504322}
+  m_Center: {x: 0.099244356, y: 1.4920847, z: 0.07058873}
 --- !u!1 &2015725598
 GameObject:
   m_ObjectHideFlags: 0
@@ -10590,7 +10622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2015725599}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Object0034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10623,7 +10655,7 @@ GameObject:
   - component: {fileID: 2021680393}
   - component: {fileID: 2021680395}
   - component: {fileID: 2021680394}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Sphere008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10706,7 +10738,7 @@ GameObject:
   - component: {fileID: 2025161782}
   - component: {fileID: 2025161784}
   - component: {fileID: 2025161783}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10791,7 +10823,7 @@ GameObject:
   - component: {fileID: 2033909853}
   - component: {fileID: 2033909855}
   - component: {fileID: 2033909854}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10942,7 +10974,7 @@ GameObject:
   - component: {fileID: 2040362126}
   - component: {fileID: 2040362128}
   - component: {fileID: 2040362127}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11285,7 +11317,7 @@ GameObject:
   - component: {fileID: 2111495743}
   - component: {fileID: 2111495745}
   - component: {fileID: 2111495744}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11368,7 +11400,7 @@ GameObject:
   - component: {fileID: 2122661879}
   - component: {fileID: 2122661881}
   - component: {fileID: 2122661880}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: 124
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11452,7 +11484,7 @@ GameObject:
   - component: {fileID: 2122683189}
   - component: {fileID: 2122683191}
   - component: {fileID: 2122683190}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: DiscBrakeFL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11536,7 +11568,7 @@ GameObject:
   - component: {fileID: 2137789654}
   - component: {fileID: 2137789656}
   - component: {fileID: 2137789655}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Cylinder005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11703,7 +11735,7 @@ GameObject:
   - component: {fileID: 4556029761986637}
   - component: {fileID: 33866234423191079}
   - component: {fileID: 23333981242736919}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelRL.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11721,7 +11753,7 @@ GameObject:
   - component: {fileID: 4699475414029933}
   - component: {fileID: 33628103935369339}
   - component: {fileID: 23592543255421643}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Back Door - Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11739,7 +11771,7 @@ GameObject:
   - component: {fileID: 4301869994385243}
   - component: {fileID: 33446475680225425}
   - component: {fileID: 23812109870533075}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Lueces arriba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11757,7 +11789,7 @@ GameObject:
   - component: {fileID: 4805228324989565}
   - component: {fileID: 33841004800680633}
   - component: {fileID: 23393996338293499}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11775,7 +11807,7 @@ GameObject:
   - component: {fileID: 4448156720308727}
   - component: {fileID: 33596470691220611}
   - component: {fileID: 23419833063569697}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: DiscBrakeRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11793,7 +11825,7 @@ GameObject:
   - component: {fileID: 4127976706518419}
   - component: {fileID: 33482282348224277}
   - component: {fileID: 23980571597230483}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11811,7 +11843,7 @@ GameObject:
   - component: {fileID: 4318955043157085}
   - component: {fileID: 33037413191469501}
   - component: {fileID: 23189341651029361}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11829,7 +11861,7 @@ GameObject:
   - component: {fileID: 4278726781592793}
   - component: {fileID: 33101998574543699}
   - component: {fileID: 23281728452261283}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Cylinder005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11847,7 +11879,7 @@ GameObject:
   - component: {fileID: 4317010081951625}
   - component: {fileID: 33480698766695577}
   - component: {fileID: 23900538292310865}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Innertube 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11865,7 +11897,7 @@ GameObject:
   - component: {fileID: 4376566411612789}
   - component: {fileID: 33737849372368739}
   - component: {fileID: 23678267553715429}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Front piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11883,7 +11915,7 @@ GameObject:
   - component: {fileID: 4238406897310635}
   - component: {fileID: 33238828860588475}
   - component: {fileID: 23983577299455861}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11901,7 +11933,7 @@ GameObject:
   - component: {fileID: 4578057801643341}
   - component: {fileID: 33509762792588775}
   - component: {fileID: 23040185422042753}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11919,7 +11951,7 @@ GameObject:
   - component: {fileID: 4930550667418085}
   - component: {fileID: 33799814164758499}
   - component: {fileID: 23563055259718005}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Estructuras Internas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11935,7 +11967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4749386809492085}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelRR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11953,7 +11985,7 @@ GameObject:
   - component: {fileID: 4065941620849113}
   - component: {fileID: 33787800909810495}
   - component: {fileID: 23409801374229909}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Metal Delantero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11971,7 +12003,7 @@ GameObject:
   - component: {fileID: 4755984271113763}
   - component: {fileID: 33760482409759731}
   - component: {fileID: 23086456604970773}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Front Left Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11989,7 +12021,7 @@ GameObject:
   - component: {fileID: 4975399599529325}
   - component: {fileID: 33723183237432817}
   - component: {fileID: 23637214076054411}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Innertube 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12007,7 +12039,7 @@ GameObject:
   - component: {fileID: 4920098616087851}
   - component: {fileID: 33253885747764025}
   - component: {fileID: 23668464542962677}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Middle Right Door - Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12025,7 +12057,7 @@ GameObject:
   - component: {fileID: 4778630137410117}
   - component: {fileID: 33323562592925791}
   - component: {fileID: 23693350501260397}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12043,7 +12075,7 @@ GameObject:
   - component: {fileID: 4573859793806473}
   - component: {fileID: 33464716744264991}
   - component: {fileID: 23741570255190549}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12061,7 +12093,7 @@ GameObject:
   - component: {fileID: 4066432348370631}
   - component: {fileID: 33017034887088929}
   - component: {fileID: 23998005541974421}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12079,7 +12111,7 @@ GameObject:
   - component: {fileID: 4007524539374307}
   - component: {fileID: 33777980857841171}
   - component: {fileID: 23317733400686027}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: DiscBrakeFL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12097,7 +12129,7 @@ GameObject:
   - component: {fileID: 4271521889656795}
   - component: {fileID: 33958791237468077}
   - component: {fileID: 23591452590281557}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12115,7 +12147,7 @@ GameObject:
   - component: {fileID: 4525209894367011}
   - component: {fileID: 33253852643144207}
   - component: {fileID: 23386046588210117}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Middle Door Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12133,7 +12165,7 @@ GameObject:
   - component: {fileID: 4049629179882063}
   - component: {fileID: 33921338031400203}
   - component: {fileID: 23945805056298249}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12151,7 +12183,7 @@ GameObject:
   - component: {fileID: 4065501958368191}
   - component: {fileID: 33880836857950919}
   - component: {fileID: 23631633360068361}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: DiscBrakeRR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12169,7 +12201,7 @@ GameObject:
   - component: {fileID: 4202492553062135}
   - component: {fileID: 33427976425661111}
   - component: {fileID: 23760379311028395}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Middle Left Door - Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12187,7 +12219,7 @@ GameObject:
   - component: {fileID: 4054747370511069}
   - component: {fileID: 33700555714359575}
   - component: {fileID: 23244552173254097}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Buyer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12205,7 +12237,7 @@ GameObject:
   - component: {fileID: 4965621875524783}
   - component: {fileID: 33739098328547763}
   - component: {fileID: 23269125624191897}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12221,7 +12253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4645271101312119}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelFL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12239,7 +12271,7 @@ GameObject:
   - component: {fileID: 4899464083193345}
   - component: {fileID: 33577727901336065}
   - component: {fileID: 23207043392675145}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12257,7 +12289,7 @@ GameObject:
   - component: {fileID: 4112469910501583}
   - component: {fileID: 33471695684876399}
   - component: {fileID: 23664091985028899}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12275,7 +12307,7 @@ GameObject:
   - component: {fileID: 4349372155348001}
   - component: {fileID: 33302922641782171}
   - component: {fileID: 23908052010936567}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12293,7 +12325,7 @@ GameObject:
   - component: {fileID: 4544768030931801}
   - component: {fileID: 33171492486515439}
   - component: {fileID: 23186947976984321}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12311,7 +12343,7 @@ GameObject:
   - component: {fileID: 4887768936708845}
   - component: {fileID: 33912402000569885}
   - component: {fileID: 23793534302397527}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Espejos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12329,7 +12361,7 @@ GameObject:
   - component: {fileID: 4161013721032603}
   - component: {fileID: 33998811647919547}
   - component: {fileID: 23263215655864599}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Buyer 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12347,7 +12379,7 @@ GameObject:
   - component: {fileID: 4308542243606133}
   - component: {fileID: 33225754017544531}
   - component: {fileID: 23497918218773241}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Parte de atras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12365,7 +12397,7 @@ GameObject:
   - component: {fileID: 4253791804956325}
   - component: {fileID: 33427509487222043}
   - component: {fileID: 23864914144310523}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Buyer 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12381,7 +12413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4377117663907179}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Object0034 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12399,7 +12431,7 @@ GameObject:
   - component: {fileID: 4044634877002633}
   - component: {fileID: 33415486394650913}
   - component: {fileID: 23197592424729011}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12417,7 +12449,7 @@ GameObject:
   - component: {fileID: 4813295040700767}
   - component: {fileID: 33965103939804845}
   - component: {fileID: 23094818352422679}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelRR.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12435,7 +12467,7 @@ GameObject:
   - component: {fileID: 4155213650955351}
   - component: {fileID: 33917822230498437}
   - component: {fileID: 23302435752033593}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12453,7 +12485,7 @@ GameObject:
   - component: {fileID: 4534832323212945}
   - component: {fileID: 33642684673341989}
   - component: {fileID: 23843703521520935}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Truck - Front Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12471,7 +12503,7 @@ GameObject:
   - component: {fileID: 4335541107693119}
   - component: {fileID: 33855323538783283}
   - component: {fileID: 23092023618452683}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: 123456
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12489,7 +12521,7 @@ GameObject:
   - component: {fileID: 4374458123141659}
   - component: {fileID: 33933793987759127}
   - component: {fileID: 23512354097999565}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12507,7 +12539,7 @@ GameObject:
   - component: {fileID: 4176036512404745}
   - component: {fileID: 33562385656860811}
   - component: {fileID: 23302497081486345}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Cylinder004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12523,7 +12555,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4094453578431185}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12541,7 +12573,7 @@ GameObject:
   - component: {fileID: 4066041398967969}
   - component: {fileID: 33826504042162665}
   - component: {fileID: 23464129684674597}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Front Left Door - Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12559,7 +12591,7 @@ GameObject:
   - component: {fileID: 4169937118086603}
   - component: {fileID: 33200380624178197}
   - component: {fileID: 23995190668005583}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12577,7 +12609,7 @@ GameObject:
   - component: {fileID: 4563372551605667}
   - component: {fileID: 33650699727848023}
   - component: {fileID: 23861272902699279}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Sphere005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12595,7 +12627,7 @@ GameObject:
   - component: {fileID: 4124236424003417}
   - component: {fileID: 33417124871174661}
   - component: {fileID: 23729963431535717}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12613,7 +12645,7 @@ GameObject:
   - component: {fileID: 4372308193617919}
   - component: {fileID: 33045842382679129}
   - component: {fileID: 23098215719697341}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Cone001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12631,7 +12663,7 @@ GameObject:
   - component: {fileID: 4919447066374911}
   - component: {fileID: 33369515889662633}
   - component: {fileID: 23472610784147549}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Sphere004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12649,7 +12681,7 @@ GameObject:
   - component: {fileID: 4754990112084219}
   - component: {fileID: 33621311256358173}
   - component: {fileID: 23102083575999925}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12667,7 +12699,7 @@ GameObject:
   - component: {fileID: 4681890248796739}
   - component: {fileID: 33975331036961805}
   - component: {fileID: 23486831819805899}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Innertube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12683,7 +12715,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4311087906496829}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Object0034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12701,7 +12733,7 @@ GameObject:
   - component: {fileID: 4934298248323745}
   - component: {fileID: 33657085211257685}
   - component: {fileID: 23919051855477357}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12719,7 +12751,7 @@ GameObject:
   - component: {fileID: 4719447701654311}
   - component: {fileID: 33928909439964061}
   - component: {fileID: 23715549801346681}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12737,7 +12769,7 @@ GameObject:
   - component: {fileID: 4427129152725475}
   - component: {fileID: 33111382438049931}
   - component: {fileID: 23045592283837345}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12755,7 +12787,7 @@ GameObject:
   - component: {fileID: 4593084964889715}
   - component: {fileID: 33413109922070395}
   - component: {fileID: 23330665180481695}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12773,7 +12805,7 @@ GameObject:
   - component: {fileID: 4838601010744877}
   - component: {fileID: 33957780575370695}
   - component: {fileID: 23368861062998647}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12791,7 +12823,7 @@ GameObject:
   - component: {fileID: 4449315036345607}
   - component: {fileID: 33461495431514513}
   - component: {fileID: 23247362158290213}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Cylinder003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12809,7 +12841,7 @@ GameObject:
   - component: {fileID: 4366427368068925}
   - component: {fileID: 33090448531569563}
   - component: {fileID: 23811886557534233}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Middle Right Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12827,7 +12859,7 @@ GameObject:
   - component: {fileID: 4655315354149849}
   - component: {fileID: 33262190826194987}
   - component: {fileID: 23405041599716069}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelFL.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12845,7 +12877,7 @@ GameObject:
   - component: {fileID: 4662873253081869}
   - component: {fileID: 33134300647968371}
   - component: {fileID: 23133516840396893}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Buyer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12863,7 +12895,7 @@ GameObject:
   - component: {fileID: 4338523153778553}
   - component: {fileID: 33267551514533531}
   - component: {fileID: 23989153323011177}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Front Right Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12880,7 +12912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4240292073226057}
   - component: {fileID: 111249746217509855}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: camion entero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12898,7 +12930,7 @@ GameObject:
   - component: {fileID: 4051994786435663}
   - component: {fileID: 33942847528739961}
   - component: {fileID: 23369714704149021}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Front piece 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12916,7 +12948,7 @@ GameObject:
   - component: {fileID: 4534380495151019}
   - component: {fileID: 33194732743362269}
   - component: {fileID: 23705152623547485}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelFR.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12932,7 +12964,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4897067127019353}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12950,7 +12982,7 @@ GameObject:
   - component: {fileID: 4303842912736805}
   - component: {fileID: 33260996379388475}
   - component: {fileID: 23873056051304723}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12966,7 +12998,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4827865388391165}
-  m_Layer: 8
+  - component: {fileID: 4827865388391166}
+  - component: {fileID: 4827865388391167}
+  m_Layer: 6
   m_Name: Camion - new
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -12984,7 +13018,7 @@ GameObject:
   - component: {fileID: 4660294674569643}
   - component: {fileID: 33207077166682889}
   - component: {fileID: 23291094507254827}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Back Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13002,7 +13036,7 @@ GameObject:
   - component: {fileID: 4140814097674805}
   - component: {fileID: 33224289501611333}
   - component: {fileID: 23334944629932715}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: DiscBrakeFR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13020,7 +13054,7 @@ GameObject:
   - component: {fileID: 4855933408201401}
   - component: {fileID: 33156924063263389}
   - component: {fileID: 23415759141582781}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: lUCESITAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13038,7 +13072,7 @@ GameObject:
   - component: {fileID: 4010996034444597}
   - component: {fileID: 33049857267627917}
   - component: {fileID: 23936802617970099}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13056,7 +13090,7 @@ GameObject:
   - component: {fileID: 4456035204490845}
   - component: {fileID: 33161070403954987}
   - component: {fileID: 23760968903190471}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Front Right Door - Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13074,7 +13108,7 @@ GameObject:
   - component: {fileID: 4488521584494987}
   - component: {fileID: 33261369118383463}
   - component: {fileID: 23244989054341259}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Innertube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13092,7 +13126,7 @@ GameObject:
   - component: {fileID: 4114628836649717}
   - component: {fileID: 33595743991291761}
   - component: {fileID: 23119339266649157}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Luces delanteras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13110,7 +13144,7 @@ GameObject:
   - component: {fileID: 4778566143115343}
   - component: {fileID: 33689957656233365}
   - component: {fileID: 23863863198119873}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Front piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13128,7 +13162,7 @@ GameObject:
   - component: {fileID: 4671827293477143}
   - component: {fileID: 33757320655946511}
   - component: {fileID: 23588720960118031}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Sphere008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13146,7 +13180,7 @@ GameObject:
   - component: {fileID: 4731945678775423}
   - component: {fileID: 33021776645795365}
   - component: {fileID: 23325390838369993}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: 124
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13164,8 +13198,7 @@ GameObject:
   - component: {fileID: 4766646316626057}
   - component: {fileID: 33583211387772205}
   - component: {fileID: 23933376823293537}
-  - component: {fileID: 64423113705713053}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Truck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13183,7 +13216,7 @@ GameObject:
   - component: {fileID: 4349822952442847}
   - component: {fileID: 33353640779648903}
   - component: {fileID: 23932554218324141}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13201,7 +13234,7 @@ GameObject:
   - component: {fileID: 4837311062924121}
   - component: {fileID: 33316386500489743}
   - component: {fileID: 23190639374313361}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13219,7 +13252,7 @@ GameObject:
   - component: {fileID: 4881558683069671}
   - component: {fileID: 33757465226588231}
   - component: {fileID: 23271354044954557}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Metal trasero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13237,7 +13270,7 @@ GameObject:
   - component: {fileID: 4609578271077811}
   - component: {fileID: 33876137700800793}
   - component: {fileID: 23315255830494697}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13255,7 +13288,7 @@ GameObject:
   - component: {fileID: 4289454596032999}
   - component: {fileID: 33098712941712157}
   - component: {fileID: 23695425644624105}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wheel - Front piece 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13271,7 +13304,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4742831262022767}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: WheelFR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13289,7 +13322,7 @@ GameObject:
   - component: {fileID: 4567740835549105}
   - component: {fileID: 33711472206354051}
   - component: {fileID: 23492756894072541}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13307,7 +13340,7 @@ GameObject:
   - component: {fileID: 4965786398289037}
   - component: {fileID: 33217457310881553}
   - component: {fileID: 23563255046548687}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Box032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13325,7 +13358,7 @@ GameObject:
   - component: {fileID: 4230057870772253}
   - component: {fileID: 33594219807813023}
   - component: {fileID: 23229466970251521}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Object016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13343,7 +13376,7 @@ GameObject:
   - component: {fileID: 4789452554446065}
   - component: {fileID: 33369156481915851}
   - component: {fileID: 23475954734976815}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: ChamferBox025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14632,6 +14665,59 @@ Transform:
   - {fileID: 4749386809492085}
   m_Father: {fileID: 986795388}
   m_LocalEulerAnglesHint: {x: 0, y: 89.039, z: 0}
+--- !u!114 &4827865388391166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753749893566351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6ef95c8911d9045865954659df5242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBeingHovered: 0
+  _inputReader: {fileID: 181727656}
+  onButtonPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 833723589}
+        m_TargetAssemblyTypeName: SceneManagement.MenuManager, Assembly-CSharp
+        m_MethodName: PlayMultiPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  renderer: {fileID: 23933376823293537}
+  normalMaterial: {fileID: 2100000, guid: db255bcb57464534a887b00391c90ce1, type: 2}
+  highlightedMaterial: {fileID: 2100000, guid: a8fc94ee5b78c4f4d973b43eb6648ad4, type: 2}
+--- !u!65 &4827865388391167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753749893566351}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.9863164, y: 3.984169, z: 7.504322}
+  m_Center: {x: 0.099244356, y: 1.4920847, z: 0.07058873}
 --- !u!4 &4837311062924121
 Transform:
   m_ObjectHideFlags: 0
@@ -18087,7 +18173,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 9de7a6a53089c2f47b0f4a12f4e19fce, type: 2}
-  - {fileID: 2100000, guid: c4216b4323cc8e546afe6cd6b349805d, type: 2}
+  - {fileID: 2100000, guid: db255bcb57464534a887b00391c90ce1, type: 2}
   - {fileID: 2100000, guid: 1498ef4e410b9724c9106000c169aa22, type: 2}
   - {fileID: 2100000, guid: c05e5ea357e696c49afb1eeedb59c351, type: 2}
   - {fileID: 2100000, guid: f2edd1b2cd382214e81b1f41ad9a9f5e, type: 2}
@@ -19088,28 +19174,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401213139271643}
   m_Mesh: {fileID: 4300172, guid: a240d8cde3be79f4e86b52e5ad9aa15a, type: 3}
---- !u!64 &64423113705713053
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858248963156205}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: a240d8cde3be79f4e86b52e5ad9aa15a, type: 3}
 --- !u!111 &111249746217509855
 Animation:
   m_ObjectHideFlags: 0

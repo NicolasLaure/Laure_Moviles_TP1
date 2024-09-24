@@ -1,20 +1,16 @@
-using TMPro;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class EnvironmentButton : MonoBehaviour
 {
     public bool isBeingHovered = false;
-
-    [SerializeField] private UI_InputReader _inputReader;
-
-    [SerializeField] private TextMeshPro text;
-
-    [SerializeField] private Color normalColor;
-    [SerializeField] private Color highlightedColor;
+    [SerializeField] protected UI_InputReader _inputReader;
 
     [SerializeField] private UnityEvent onButtonPressed;
-    void Start()
+
+    protected virtual void Start()
     {
         _inputReader.onTouch += HandleTouch;
     }
@@ -25,13 +21,7 @@ public class EnvironmentButton : MonoBehaviour
             onButtonPressed?.Invoke();
     }
 
-    public void ToggleHover(bool value)
+    public virtual void ToggleHover(bool value)
     {
-        isBeingHovered = value;
-
-        if (value)
-            text.color = highlightedColor;
-        else
-            text.color = normalColor;
     }
 }

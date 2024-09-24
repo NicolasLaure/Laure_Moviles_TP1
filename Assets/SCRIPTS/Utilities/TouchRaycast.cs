@@ -7,7 +7,7 @@ public class TouchRaycast : MonoBehaviour
     [SerializeField] private UI_InputReader input;
     [SerializeField] private LayerMask layerMask;
 
-    private EnvironmentButton _currentButton;
+    private EnvironmentButton _currentTextButton;
 
     void Start()
     {
@@ -21,18 +21,18 @@ public class TouchRaycast : MonoBehaviour
         {
             Debug.Log(hit.transform.name);
 
-            if (_currentButton != null && _currentButton != hit.transform.GetComponent<EnvironmentButton>())
-                _currentButton.ToggleHover(false);
+            if (_currentTextButton != null && _currentTextButton != hit.transform.GetComponent<EnvironmentButton>())
+                _currentTextButton.ToggleHover(false);
 
-            _currentButton = hit.transform.GetComponent<EnvironmentButton>();
-            _currentButton.ToggleHover(true);
+            _currentTextButton = hit.transform.GetComponent<EnvironmentButton>();
+            _currentTextButton.ToggleHover(true);
         }
         else
         {
-            if (_currentButton != null)
-                _currentButton.ToggleHover(false);
+            if (_currentTextButton != null)
+                _currentTextButton.ToggleHover(false);
 
-            _currentButton = null;
+            _currentTextButton = null;
         }
     }
 }

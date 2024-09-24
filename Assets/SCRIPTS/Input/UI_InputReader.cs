@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class UI_InputReader : MonoBehaviour
 {
-    private PlayerInputMap _input;
+    private UI_InputMap _input;
 
     public event Action<Vector2> onTouchPosition;
 
@@ -15,7 +15,7 @@ public class UI_InputReader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _input = new PlayerInputMap();
+        _input = new UI_InputMap();
         _input.Enable();
 
         _input.UI.Touch.started += HandleTouchStarted;
@@ -26,6 +26,11 @@ public class UI_InputReader : MonoBehaviour
     {
         _input.UI.Touch.performed -= HandleTouchStarted;
         _input.UI.Touch.canceled -= HandleTouchCanceled;
+
+        if (_input.UI.TouchPosition != null)
+            _input.UI.TouchPosition.performed -= HandleTouchPosition;
+        
+        _input.Disable();
     }
 
     void HandleTouchPosition(InputAction.CallbackContext context)
