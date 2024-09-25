@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GameManagerSO
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 20228968466115f409c9ebba074976e3, type: 2}
-  TiempoDeJuego: 10
+  TiempoDeJuego: 60
   EstAct: 2
   playerPrefab: {fileID: 331577153966840369, guid: 93aff51c22efe2d44abc5af137cd5747,
     type: 3}

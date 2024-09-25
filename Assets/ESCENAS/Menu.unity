@@ -14684,7 +14684,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 833723589}
         m_TargetAssemblyTypeName: SceneManagement.MenuManager, Assembly-CSharp
-        m_MethodName: PlayMultiPlayer
+        m_MethodName: PlaySinglePlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
