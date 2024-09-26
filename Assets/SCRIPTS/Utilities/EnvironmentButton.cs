@@ -18,7 +18,10 @@ public class EnvironmentButton : MonoBehaviour
     private void HandleTouch()
     {
         if (isBeingHovered)
+        {
             onButtonPressed?.Invoke();
+            ToggleHover(false);
+        }
     }
 
     public virtual void ToggleHover(bool value)
