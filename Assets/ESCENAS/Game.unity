@@ -31348,7 +31348,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b714c2aa2dd4752478b0be8db1bfa03b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImagenesDelTuto:
+  mobileImagenesDelTuto:
+  - {fileID: 2800000, guid: a2c1ff840d34ab7428b3995c7752afb4, type: 3}
+  - {fileID: 2800000, guid: 93e2e426d54cf844786ec03a58365938, type: 3}
+  - {fileID: 2800000, guid: ea7fd2fa62ba2634983de283e326e37e, type: 3}
+  _imagenesDelTuto:
   - {fileID: 2800000, guid: 2c9ac95f461fb0448aca4408de9647dc, type: 3}
   - {fileID: 2800000, guid: f836f4a482f17844b801b9ceb13c1f8a, type: 3}
   - {fileID: 2800000, guid: b7e088a57ed74ae4ebb26597dfb96cd7, type: 3}
@@ -31680,10 +31684,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b714c2aa2dd4752478b0be8db1bfa03b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImagenesDelTuto:
-  - {fileID: 2800000, guid: 2c9ac95f461fb0448aca4408de9647dc, type: 3}
-  - {fileID: 2800000, guid: f836f4a482f17844b801b9ceb13c1f8a, type: 3}
-  - {fileID: 2800000, guid: b7e088a57ed74ae4ebb26597dfb96cd7, type: 3}
+  mobileImagenesDelTuto:
+  - {fileID: 2800000, guid: a2c1ff840d34ab7428b3995c7752afb4, type: 3}
+  - {fileID: 2800000, guid: 93e2e426d54cf844786ec03a58365938, type: 3}
+  - {fileID: 2800000, guid: ea7fd2fa62ba2634983de283e326e37e, type: 3}
+  _imagenesDelTuto:
+  - {fileID: 2800000, guid: 29ed37cc5f048d1488ea8b96b08e3484, type: 3}
+  - {fileID: 2800000, guid: 76393640b6d96cf43b74fee5862601e8, type: 3}
+  - {fileID: 2800000, guid: 2c6a76733baae3b4db77555e6b1a885f, type: 3}
   Intervalo: 1.5
   ImagenesDeCalib:
   - {fileID: 2800000, guid: 7728fa8ba9181fe4ebdcb8509838f013, type: 3}
