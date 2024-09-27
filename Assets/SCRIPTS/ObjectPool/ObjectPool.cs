@@ -6,7 +6,6 @@ namespace ObjectPool
 {
     public class ObjectPool : MonoBehaviour
     {
-        public static ObjectPool instance;
         [SerializeField] private Transform spawningParent;
         [SerializeField] protected PoolConfigSO poolConfig;
         [SerializeField] private VoidEventChannelSO onBagDespawnedEvent;
@@ -14,17 +13,6 @@ namespace ObjectPool
         private List<GameObject> _objects;
 
         public int Count => poolConfig.objectCount;
-
-        private void Awake()
-        {
-            if (instance != null)
-            {
-                Destroy(this.gameObject);
-                return;
-            }
-
-            instance = this;
-        }
 
         protected virtual void Start()
         {
@@ -37,6 +25,7 @@ namespace ObjectPool
                     configObjectIndex = 0;
 
                 GameObject instantiatedObject = GameObject.Instantiate(poolConfig.poolObjects[configObjectIndex].prefab);
+                
                 if (spawningParent != null)
                     instantiatedObject.transform.parent = spawningParent;
                 
