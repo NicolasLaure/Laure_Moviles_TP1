@@ -18,6 +18,8 @@ public class GameManagerInstance : MonoBehaviour
     [SerializeField] private PalletMover tutorialP1;
     [SerializeField] private PalletMover tutorialP2;
 
+    private bool _isPaused;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +50,9 @@ public class GameManagerInstance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_isPaused)
+            return;
+
         gameManager.UpdateGame();
     }
 
@@ -55,5 +60,14 @@ public class GameManagerInstance : MonoBehaviour
     {
         yield return null;
         gameManager.IniciarTutorial();
+    }
+
+    public void TogglePause(bool value)
+    {
+        _isPaused = value;
+        if (_isPaused)
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
     }
 }
