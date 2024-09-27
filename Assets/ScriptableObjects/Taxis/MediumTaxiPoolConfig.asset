@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 925ccd9036023c941ac3968afb0bb8fd, type: 3}
-  m_Name: BagPoolConfig
+  m_Name: MediumTaxiPoolConfig
   m_EditorClassIdentifier: 
   poolObjects:
-  - {fileID: 11400000, guid: 18e85faa3d5b1924e83b323194a7d774, type: 2}
-  objectCount: 7
+  - {fileID: 11400000, guid: 17ec7f45a7d8f0b44a640d034b5f2a10, type: 2}
+  objectCount: 3

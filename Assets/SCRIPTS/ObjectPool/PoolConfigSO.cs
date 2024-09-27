@@ -5,4 +5,5 @@ using UnityEngine;
 public class PoolConfigSO : ScriptableObject
 {
     public List<PoolObjectSO> poolObjects;
+    public int objectCount;
 }

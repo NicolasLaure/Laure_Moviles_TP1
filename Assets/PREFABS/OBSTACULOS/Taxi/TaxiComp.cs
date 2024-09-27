@@ -87,10 +87,7 @@ public class TaxiComp : MonoBehaviour
     void OnTriggerEnter(Collider coll)
     {
         if (coll.tag == FinTaxiTag)
-        {
-            transform.position = PosIni;
-            transform.localEulerAngles = RotIni;
-        }
+            TaxiPool.instance.TryReturnObject(gameObject);
     }
 
     void OnCollisionEnter(Collision coll)

@@ -7,13 +7,13 @@ namespace ObjectPool
     public class ObjectPool : MonoBehaviour
     {
         public static ObjectPool instance;
+        [SerializeField] private Transform spawningParent;
         [SerializeField] private PoolConfigSO poolConfig;
-        [SerializeField] private int count;
         [SerializeField] private VoidEventChannelSO onBagDespawnedEvent;
 
         private List<GameObject> _objects;
 
-        public int Count => count;
+        public int Count => poolConfig.objectCount;
 
         private void Awake()
         {
@@ -31,12 +31,15 @@ namespace ObjectPool
             _objects = new List<GameObject>();
 
             int configObjectIndex = 0;
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < poolConfig.objectCount; i++)
             {
                 if (configObjectIndex >= poolConfig.poolObjects.Count)
                     configObjectIndex = 0;
 
                 GameObject instantiatedObject = GameObject.Instantiate(poolConfig.poolObjects[configObjectIndex].prefab);
+                if (spawningParent != null)
+                    instantiatedObject.transform.parent = spawningParent;
+                
                 instantiatedObject.SetActive(false);
                 _objects.Add(instantiatedObject);
                 configObjectIndex++;
