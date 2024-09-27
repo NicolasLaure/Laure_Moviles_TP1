@@ -6,18 +6,23 @@ using UnityEngine;
 
 public class MainMenuCameraManager : MonoBehaviour
 {
-    [SerializeField] private VoidEventChannelSO onPlayButtonPressedEvent;
-    [SerializeField] private VoidEventChannelSO onCreditsButtonPressedEvent;
-    [SerializeField] private VoidEventChannelSO onCreditsReturnButtonPressedEvent;
-    [SerializeField] private VoidEventChannelSO onSelectionReturnButtonPressedEvent;
-
     [SerializeField] private float startDelay = 0;
     [SerializeField] private CinemachineDollyCart dollyCart;
 
+    [SerializeField] private VoidEventChannelSO onPlayButtonPressedEvent;
+    [SerializeField] private VoidEventChannelSO onSelectionReturnButtonPressedEvent;
+    [SerializeField] private VoidEventChannelSO onCreditsButtonPressedEvent;
+    [SerializeField] private VoidEventChannelSO onCreditsReturnButtonPressedEvent;
+    [SerializeField] private VoidEventChannelSO onOptionsButtonPressedEvent;
+    [SerializeField] private VoidEventChannelSO onOptionsReturnButtonPressedEvent;
+
     [SerializeField] private CinemachinePathBase mainToSelectionPath;
+    [SerializeField] private CinemachinePathBase SelectionToMainPath;
     [SerializeField] private CinemachinePathBase mainToCreditsPath;
     [SerializeField] private CinemachinePathBase creditsToMainPath;
-    [SerializeField] private CinemachinePathBase SelectionToMainPath;
+    [SerializeField] private CinemachinePathBase mainToOptionsPath;
+    [SerializeField] private CinemachinePathBase optionsToMainPath;
+
 
     [SerializeField] private GameObject creditsGameObject;
 
@@ -27,6 +32,8 @@ public class MainMenuCameraManager : MonoBehaviour
         onCreditsButtonPressedEvent.onVoidEvent += HandleCreditsButtonEvent;
         onCreditsReturnButtonPressedEvent.onVoidEvent += HandleCreditsReturnButtonEvent;
         onSelectionReturnButtonPressedEvent.onVoidEvent += HandlePlayersSelectionReturnButtonEvent;
+        onOptionsButtonPressedEvent.onVoidEvent += HandleOptionsButtonEvent;
+        onOptionsReturnButtonPressedEvent.onVoidEvent += HandleOptionsReturnButtonEvent;
     }
 
     private void OnDestroy()
@@ -42,6 +49,12 @@ public class MainMenuCameraManager : MonoBehaviour
 
         if (onSelectionReturnButtonPressedEvent != null)
             onSelectionReturnButtonPressedEvent.onVoidEvent -= HandlePlayersSelectionReturnButtonEvent;
+
+        if (onOptionsButtonPressedEvent != null)
+            onOptionsButtonPressedEvent.onVoidEvent -= HandleOptionsButtonEvent;
+
+        if (onOptionsReturnButtonPressedEvent != null)
+            onOptionsReturnButtonPressedEvent.onVoidEvent -= HandleOptionsReturnButtonEvent;
     }
 
     void HandlePlayButtonEvent()
@@ -64,6 +77,16 @@ public class MainMenuCameraManager : MonoBehaviour
     void HandlePlayersSelectionReturnButtonEvent()
     {
         StartCoroutine(StartCameraCoroutine(SelectionToMainPath, 0));
+    }
+
+    void HandleOptionsButtonEvent()
+    {
+        StartCoroutine(StartCameraCoroutine(mainToOptionsPath, 0));
+    }
+
+    void HandleOptionsReturnButtonEvent()
+    {
+        StartCoroutine(StartCameraCoroutine(optionsToMainPath, 0));
     }
 
     private IEnumerator StartCameraCoroutine(CinemachinePathBase newPath, float duration)
