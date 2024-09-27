@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 925ccd9036023c941ac3968afb0bb8fd, type: 3}
-  m_Name: Hard TaxiPoolConfig 1
+  m_Name: HardConfig
   m_EditorClassIdentifier: 
   poolObjects:
   - {fileID: 11400000, guid: 17ec7f45a7d8f0b44a640d034b5f2a10, type: 2}

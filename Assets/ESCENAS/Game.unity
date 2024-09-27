@@ -17615,6 +17615,7 @@ MonoBehaviour:
   poolConfig: {fileID: 11400000, guid: b94e7c70a103e2844bc4bc7f4fa687bf, type: 2}
   onBagDespawnedEvent: {fileID: 11400000, guid: 02d2214c5c3316b44b9e29fe9ec65723,
     type: 2}
+  difficultyConfig: {fileID: 11400000, guid: c4b3ec9203b2f584ca6cbc4b50487d4e, type: 2}
 --- !u!4 &930243135
 Transform:
   m_ObjectHideFlags: 0
@@ -17623,12 +17624,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930243133}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.498093, y: -5.9031754, z: -5392.3604}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1764302845}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &930243136
 MonoBehaviour:
@@ -17642,7 +17643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e147971f7d1aed8409b1139ca5709f35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawningPoints: {fileID: 11400000, guid: 24969502abf7dcc458870f612973a1d8, type: 2}
+  difficultyConfig: {fileID: 11400000, guid: c4b3ec9203b2f584ca6cbc4b50487d4e, type: 2}
   onTaxiDespawnedEvent: {fileID: 11400000, guid: 02d2214c5c3316b44b9e29fe9ec65723,
     type: 2}
 --- !u!1 &933060471
@@ -35272,6 +35273,7 @@ Transform:
   - {fileID: 1706873572}
   - {fileID: 1666765433}
   - {fileID: 94867498}
+  - {fileID: 930243135}
   m_Father: {fileID: 405613036}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1765583412 stripped
@@ -44372,4 +44374,3 @@ SceneRoots:
   - {fileID: 405613036}
   - {fileID: 1854697800}
   - {fileID: 1590687278}
-  - {fileID: 930243135}

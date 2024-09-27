@@ -8,7 +8,7 @@ namespace ObjectPool
     {
         public static ObjectPool instance;
         [SerializeField] private Transform spawningParent;
-        [SerializeField] private PoolConfigSO poolConfig;
+        [SerializeField] protected PoolConfigSO poolConfig;
         [SerializeField] private VoidEventChannelSO onBagDespawnedEvent;
 
         private List<GameObject> _objects;
@@ -26,7 +26,7 @@ namespace ObjectPool
             instance = this;
         }
 
-        private void Start()
+        protected virtual void Start()
         {
             _objects = new List<GameObject>();
 

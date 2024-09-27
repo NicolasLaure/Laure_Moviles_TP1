@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class TaxiSpawner : MonoBehaviour
 {
-    public TaxiSpawningPointsSO spawningPoints;
+    [SerializeField] private TaxiDifficultyConfig difficultyConfig;
     [SerializeField] private VoidEventChannelSO onTaxiDespawnedEvent;
 
     private int _currentIndex = 0;
 
+    private TaxiSpawningPointsSO _spawningPoints;
     private void Start()
     {
+        _spawningPoints = difficultyConfig.pointsConfig;
         StartCoroutine(Initialize());
     }
 
@@ -34,13 +36,13 @@ public class TaxiSpawner : MonoBehaviour
 
     void HandleSpawnBag()
     {
-        if (_currentIndex >= spawningPoints.spawningPositions.Count)
+        if (_currentIndex >= _spawningPoints.spawningPositions.Count)
             return;
 
         if (TaxiPool.instance.TryGetPooledObject(out GameObject taxi))
         {
-            taxi.transform.localPosition = spawningPoints.spawningPositions[_currentIndex];
-            taxi.transform.localRotation = Quaternion.Euler(spawningPoints.spawningRotationsEuler[_currentIndex]);
+            taxi.transform.localPosition = _spawningPoints.spawningPositions[_currentIndex];
+            taxi.transform.localRotation = Quaternion.Euler(_spawningPoints.spawningRotationsEuler[_currentIndex]);
             _currentIndex++;
         }
     }
