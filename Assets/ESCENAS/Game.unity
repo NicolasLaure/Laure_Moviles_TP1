@@ -38627,6 +38627,9 @@ MonoBehaviour:
   contrCalib2: {fileID: 1432105383}
   tutorialP1: {fileID: 1466112525}
   tutorialP2: {fileID: 305290393}
+  difficultyHandlerSo: {fileID: 11400000, guid: 5589f22672f60584aad49d491b40cc13,
+    type: 2}
+  obstaclesParent: {fileID: 1764302844}
 --- !u!114 &1936223692
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,11 +18,15 @@ public class GameManagerInstance : MonoBehaviour
     [SerializeField] private PalletMover tutorialP1;
     [SerializeField] private PalletMover tutorialP2;
 
-    private bool _isPaused;
+    [SerializeField] private DifficultyHandlerSO difficultyHandlerSo;
+    [SerializeField] private GameObject obstaclesParent;
 
     // Start is called before the first frame update
     void Start()
     {
+        if (difficultyHandlerSo.GetCurrentDifficulty().name == "Easy")
+            Destroy(obstaclesParent);
+        
         //Instantiate players
         gameManager.StartCountDown = startingCountDown;
         gameManager.GameTimer = gameTimer;
@@ -50,9 +54,6 @@ public class GameManagerInstance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_isPaused)
-            return;
-
         gameManager.UpdateGame();
     }
 
@@ -64,8 +65,7 @@ public class GameManagerInstance : MonoBehaviour
 
     public void TogglePause(bool value)
     {
-        _isPaused = value;
-        if (_isPaused)
+        if (value)
             Time.timeScale = 0;
         else
             Time.timeScale = 1;
