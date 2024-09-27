@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f52f1cc0c1962294f8c4873dde2ceddc, type: 3}
-  m_Name: OnMediumSelected
+  m_Script: {fileID: 11500000, guid: 295ceea1548524e4f826433c1744ea7d, type: 3}
+  m_Name: onMediumSelected
   m_EditorClassIdentifier: 

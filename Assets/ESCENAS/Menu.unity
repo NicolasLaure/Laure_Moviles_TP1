@@ -805,13 +805,14 @@ MonoBehaviour:
   onButtonPressed:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: c0374b2162fa49c4fa5a831af33b6551, type: 2}
-        m_TargetAssemblyTypeName: VoidEventChannelSO, Assembly-CSharp
+      - m_Target: {fileID: 11400000, guid: 5ffca568fef86884ca40e0609fe0ca6b, type: 2}
+        m_TargetAssemblyTypeName: DifficultyEventChannel, Assembly-CSharp
         m_MethodName: RaiseEvent
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: 5b400a5f0b5156144901391161d0b9e4,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DifficultySO, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5303,6 +5304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 833723590}
   - component: {fileID: 833723589}
+  - component: {fileID: 833723591}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -5338,6 +5340,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &833723591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833723588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0a4c762823e114da0ba12e411816e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficultyHandlerSo: {fileID: 11400000, guid: 5589f22672f60584aad49d491b40cc13,
+    type: 2}
+  onEasySelected: {fileID: 11400000, guid: 818a27d34c5d97a4c876dd47d3eb3ec8, type: 2}
+  onMediumSelected: {fileID: 11400000, guid: 5ffca568fef86884ca40e0609fe0ca6b, type: 2}
+  onHardSelected: {fileID: 11400000, guid: 5903ddca42fbc1148924e626ca936beb, type: 2}
 --- !u!1 &889390145
 GameObject:
   m_ObjectHideFlags: 0
@@ -6905,12 +6924,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 818a27d34c5d97a4c876dd47d3eb3ec8, type: 2}
-        m_TargetAssemblyTypeName: VoidEventChannelSO, Assembly-CSharp
+        m_TargetAssemblyTypeName: DifficultyEventChannel, Assembly-CSharp
         m_MethodName: RaiseEvent
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: f53ec9e27668a9345a381eaf63f5d35b,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DifficultySO, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7522,13 +7542,14 @@ MonoBehaviour:
   onButtonPressed:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 67eaaf4a992d0804a8352381fba03bd6, type: 2}
-        m_TargetAssemblyTypeName: VoidEventChannelSO, Assembly-CSharp
+      - m_Target: {fileID: 11400000, guid: 5903ddca42fbc1148924e626ca936beb, type: 2}
+        m_TargetAssemblyTypeName: DifficultyEventChannel, Assembly-CSharp
         m_MethodName: RaiseEvent
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: b680bf09300e68d479ade847554f293b,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DifficultySO, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
