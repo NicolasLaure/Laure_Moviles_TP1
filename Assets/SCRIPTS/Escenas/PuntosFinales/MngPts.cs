@@ -10,13 +10,7 @@ public class MngPts : MonoBehaviour
     public float TiempEmpAnims = 2.5f;
     float Tempo = 0;
 
-    public TextMeshProUGUI dinero1Text;
-    public TextMeshProUGUI dinero2Text;
-
-    public TextMeshProUGUI winnerText;
-
     public float TiempEspReiniciar = 10;
-
 
     public float TiempParpadeo = 0.7f;
     float TiempoParpadeo = 0;
@@ -26,11 +20,15 @@ public class MngPts : MonoBehaviour
 
     Visualizacion Viz = new Visualizacion();
 
+    [SerializeField] private GameConfig config;
+    [SerializeField] private FinalPanel singlePlayerPanel;
+    [SerializeField] private FinalPanel multiplayerPanel;
     //---------------------------------//
 
     // Use this for initialization
     private void Start()
     {
+        TurnOnPanel();
         SetGanador();
         SetDinero();
     }
@@ -88,30 +86,51 @@ public class MngPts : MonoBehaviour
         }
     }
 
+    private void TurnOnPanel()
+    {
+        if (config.isSinglePlayer)
+            singlePlayerPanel.gameObject.SetActive(true);
+        else
+            multiplayerPanel.gameObject.SetActive(true);
+    }
     private void SetGanador()
     {
-        switch (DatosPartida.LadoGanadaor)
+        if (!config.isSinglePlayer)
         {
-            case DatosPartida.Lados.Der:
-                winnerText.text = "Player #2 Is the winner";
-                break;
-            case DatosPartida.Lados.Izq:
-                winnerText.text = "Player #1 Is the winner";
-                break;
+            switch (DatosPartida.LadoGanadaor)
+            {
+                case DatosPartida.Lados.Der:
+                    multiplayerPanel.SetWinnerText("PLAYER #2 IS THE WINNER");
+                    break;
+                case DatosPartida.Lados.Izq:
+                    multiplayerPanel.SetWinnerText("PLAYER #1 IS THE WINNER");
+                    break;
+            }
         }
     }
 
     private void SetDinero()
     {
-        if (DatosPartida.LadoGanadaor == DatosPartida.Lados.Izq) //izquierda
+        if (!config.isSinglePlayer)
         {
-            dinero1Text.text = "$" + Viz.PrepararNumeros(DatosPartida.PtsGanador);
-            dinero2Text.text = "$" + Viz.PrepararNumeros(DatosPartida.PtsPerdedor);
+            string leftText;
+            string rightText;
+            if (DatosPartida.LadoGanadaor == DatosPartida.Lados.Izq) //izquierda
+            {
+                leftText = "$" + Viz.PrepararNumeros(DatosPartida.PtsGanador);
+                rightText = "$" + Viz.PrepararNumeros(DatosPartida.PtsPerdedor);
+            }
+            else
+            {
+                leftText = "$" + Viz.PrepararNumeros(DatosPartida.PtsPerdedor);
+                rightText = "$" + Viz.PrepararNumeros(DatosPartida.PtsGanador);
+            }
+
+            multiplayerPanel.SetMoneyTexts(leftText, rightText);
         }
         else
         {
-            dinero1Text.text = "$" + Viz.PrepararNumeros(DatosPartida.PtsPerdedor);
-            dinero2Text.text = "$" + Viz.PrepararNumeros(DatosPartida.PtsGanador);
+            singlePlayerPanel.SetMoneyText("$" + Viz.PrepararNumeros(DatosPartida.PtsGanador));
         }
     }
 

@@ -181,7 +181,15 @@ public class GameManagerSO : ScriptableObject
 
         _currentGameTime = 0;
 
-        if (Player1.Dinero > Player2.Dinero)
+        if (Player2 == null)
+        {
+            DatosPartida.LadoGanadaor = DatosPartida.Lados.Izq;
+            DatosPartida.PtsGanador = Player1.Dinero;
+            Player1.GetComponent<Frenado>().Frenar();
+            Player1.ContrDesc.FinDelJuego();
+            return;
+        }
+        else if (Player1.Dinero > Player2.Dinero)
         {
             //lado que gano
             if (Player1.LadoActual == Visualizacion.Lado.Der)
@@ -211,7 +219,7 @@ public class GameManagerSO : ScriptableObject
         Player1.ContrDesc.FinDelJuego();
         Player2.ContrDesc.FinDelJuego();
     }
-    
+
     //cambia a modo de carrera
     void CambiarACarrera()
     {
