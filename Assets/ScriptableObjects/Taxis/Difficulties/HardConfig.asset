@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolObjects:
   - {fileID: 11400000, guid: 17ec7f45a7d8f0b44a640d034b5f2a10, type: 2}
-  objectCount: 7
+  objectCount: 4
